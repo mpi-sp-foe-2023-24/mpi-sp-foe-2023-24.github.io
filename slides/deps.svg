@@ -17,8 +17,8 @@
 <g id="node1" class="node">
 <title>LogicalFoundations</title>
 <g id="a_node1"><a xlink:title="Go to chapter" target="_top">
-<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="309,-933.5 143,-933.5 143,-897.5 309,-897.5 309,-933.5"/>
-<text text-anchor="start" x="161" y="-912.7" font-family="Times,serif" font-size="11.00"> &#160;&#160;&#160;&#160;Logical Foundations &#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="314,-933.5 148,-933.5 148,-897.5 314,-897.5 314,-933.5"/>
+<text text-anchor="start" x="166" y="-912.7" font-family="Times,serif" font-size="11.00"> &#160;&#160;&#160;&#160;Logical Foundations &#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
 </a>
 </g>
 </g>
@@ -26,22 +26,22 @@
 <g id="node3" class="node">
 <title>Preface</title>
 <g id="a_node3"><a xlink:href="Preface.html" xlink:title="Go to chapter" target="_top">
-<polygon fill="lightblue" stroke="black" points="257.5,-836 194.5,-836 194.5,-800 257.5,-800 257.5,-836"/>
-<text text-anchor="middle" x="226" y="-815.2" font-family="Times,serif" font-size="11.00">Preface</text>
+<polygon fill="lightblue" stroke="black" points="262.5,-836 199.5,-836 199.5,-800 262.5,-800 262.5,-836"/>
+<text text-anchor="middle" x="231" y="-815.2" font-family="Times,serif" font-size="11.00">Preface</text>
 </a>
 </g>
 </g>
 <!-- LogicalFoundations&#45;&gt;Preface -->
-<g id="edge24" class="edge">
+<g id="edge25" class="edge">
 <title>LogicalFoundations&#45;&gt;Preface</title>
-<path fill="none" stroke="gray" d="M220.68,-897.43C219.12,-883.26 218.84,-862.83 219.83,-846.38"/>
-<polygon fill="gray" stroke="gray" points="223.33,-846.5 220.67,-836.25 216.35,-845.93 223.33,-846.5"/>
+<path fill="none" stroke="gray" d="M225.68,-897.43C224.12,-883.26 223.84,-862.83 224.83,-846.38"/>
+<polygon fill="gray" stroke="gray" points="228.33,-846.5 225.67,-836.25 221.35,-845.93 228.33,-846.5"/>
 </g>
 <!-- LogicalFoundations&#45;&gt;Preface -->
-<g id="edge26" class="edge">
+<g id="edge27" class="edge">
 <title>LogicalFoundations&#45;&gt;Preface</title>
-<path fill="none" stroke="blue" d="M231.32,-897.43C232.88,-883.26 233.16,-862.83 232.17,-846.38"/>
-<polygon fill="blue" stroke="blue" points="235.65,-845.93 231.33,-836.25 228.67,-846.5 235.65,-845.93"/>
+<path fill="none" stroke="blue" d="M236.32,-897.43C237.88,-883.26 238.16,-862.83 237.17,-846.38"/>
+<polygon fill="blue" stroke="blue" points="240.65,-845.93 236.33,-836.25 233.67,-846.5 240.65,-845.93"/>
 </g>
 <!-- legend -->
 <g id="node2" class="node">
@@ -65,55 +65,55 @@
 <g id="node6" class="node">
 <title>Equiv</title>
 <g id="a_node6"><a xlink:href="Equiv.html" xlink:title="Go to chapter" target="_top">
-<polygon fill="lightblue" stroke="black" points="134,-764 22,-764 22,-720 134,-720 134,-764"/>
-<text text-anchor="start" x="65" y="-747.2" font-family="Times,serif" font-size="11.00">Equiv</text>
-<text text-anchor="start" x="40" y="-730.8" font-family="Times,serif" font-size="9.00">Program Equivalence</text>
+<polygon fill="lightblue" stroke="black" points="139,-764 27,-764 27,-720 139,-720 139,-764"/>
+<text text-anchor="start" x="70" y="-747.2" font-family="Times,serif" font-size="11.00">Equiv</text>
+<text text-anchor="start" x="45" y="-730.8" font-family="Times,serif" font-size="9.00">Program Equivalence</text>
 </a>
 </g>
 </g>
 <!-- Preface&#45;&gt;Equiv -->
-<g id="edge22" class="edge">
+<g id="edge23" class="edge">
 <title>Preface&#45;&gt;Equiv</title>
-<path fill="none" stroke="gray" d="M194.22,-803.77C173.39,-794.04 145.96,-780.52 122.93,-768.7"/>
-<polygon fill="gray" stroke="gray" points="124.51,-765.57 114.02,-764.09 121.3,-771.79 124.51,-765.57"/>
+<path fill="none" stroke="gray" d="M199.22,-803.77C178.39,-794.04 150.96,-780.52 127.93,-768.7"/>
+<polygon fill="gray" stroke="gray" points="129.51,-765.57 119.02,-764.09 126.3,-771.79 129.51,-765.57"/>
 </g>
 <!-- Preface&#45;&gt;Equiv -->
-<g id="edge27" class="edge">
+<g id="edge28" class="edge">
 <title>Preface&#45;&gt;Equiv</title>
-<path fill="none" stroke="blue" d="M197.47,-799.84C179.87,-790.54 156.74,-778.87 135.5,-768.52"/>
-<polygon fill="blue" stroke="blue" points="136.75,-765.24 126.22,-764.03 133.7,-771.54 136.75,-765.24"/>
+<path fill="none" stroke="blue" d="M202.47,-799.84C184.87,-790.54 161.74,-778.87 140.5,-768.52"/>
+<polygon fill="blue" stroke="blue" points="141.75,-765.24 131.22,-764.03 138.7,-771.54 141.75,-765.24"/>
 </g>
 <!-- Hoare -->
 <g id="node7" class="node">
 <title>Hoare</title>
 <g id="a_node7"><a xlink:href="Hoare.html" xlink:title="Go to chapter" target="_top">
-<polygon fill="lightblue" stroke="black" points="300,-764 152,-764 152,-720 300,-720 300,-764"/>
-<text text-anchor="start" x="212" y="-747.2" font-family="Times,serif" font-size="11.00">Hoare</text>
-<text text-anchor="start" x="170" y="-730.8" font-family="Times,serif" font-size="9.00">Hoare Logic (Part I, First Half)</text>
+<polygon fill="lightblue" stroke="black" points="305,-764 157,-764 157,-720 305,-720 305,-764"/>
+<text text-anchor="start" x="217" y="-747.2" font-family="Times,serif" font-size="11.00">Hoare</text>
+<text text-anchor="start" x="175" y="-730.8" font-family="Times,serif" font-size="9.00">Hoare Logic (Part I, First Half)</text>
 </a>
 </g>
 </g>
 <!-- Preface&#45;&gt;Hoare -->
-<g id="edge23" class="edge">
+<g id="edge24" class="edge">
 <title>Preface&#45;&gt;Hoare</title>
-<path fill="none" stroke="gray" d="M226,-799.84C226,-792.16 226,-782.88 226,-774.05"/>
-<polygon fill="gray" stroke="gray" points="229.5,-774.03 226,-764.03 222.5,-774.03 229.5,-774.03"/>
+<path fill="none" stroke="gray" d="M231,-799.84C231,-792.16 231,-782.88 231,-774.05"/>
+<polygon fill="gray" stroke="gray" points="234.5,-774.03 231,-764.03 227.5,-774.03 234.5,-774.03"/>
 </g>
 <!-- Smallstep -->
-<g id="node11" class="node">
+<g id="node12" class="node">
 <title>Smallstep</title>
-<g id="a_node11"><a xlink:href="Smallstep.html" xlink:title="Go to chapter" target="_top">
-<polygon fill="lightblue" stroke="black" points="479.5,-764 322.5,-764 322.5,-720 479.5,-720 479.5,-764"/>
-<text text-anchor="start" x="379.5" y="-747.2" font-family="Times,serif" font-size="11.00">Smallstep</text>
-<text text-anchor="start" x="341" y="-730.8" font-family="Times,serif" font-size="9.00">Small&#45;Step Operational Semantics</text>
+<g id="a_node12"><a xlink:href="Smallstep.html" xlink:title="Go to chapter" target="_top">
+<polygon fill="lightblue" stroke="black" points="484.5,-764 327.5,-764 327.5,-720 484.5,-720 484.5,-764"/>
+<text text-anchor="start" x="384.5" y="-747.2" font-family="Times,serif" font-size="11.00">Smallstep</text>
+<text text-anchor="start" x="346" y="-730.8" font-family="Times,serif" font-size="9.00">Small&#45;Step Operational Semantics</text>
 </a>
 </g>
 </g>
 <!-- Preface&#45;&gt;Smallstep -->
-<g id="edge21" class="edge">
+<g id="edge22" class="edge">
 <title>Preface&#45;&gt;Smallstep</title>
-<path fill="none" stroke="gray" d="M257.69,-803.6C281.05,-793.72 313.53,-779.99 341.65,-768.1"/>
-<polygon fill="gray" stroke="gray" points="343.16,-771.26 351.01,-764.14 340.43,-764.81 343.16,-771.26"/>
+<path fill="none" stroke="gray" d="M262.69,-803.6C286.05,-793.72 318.53,-779.99 346.65,-768.1"/>
+<polygon fill="gray" stroke="gray" points="348.16,-771.26 356.01,-764.14 345.43,-764.81 348.16,-771.26"/>
 </g>
 <!-- Postscript -->
 <g id="node4" class="node">
@@ -135,185 +135,207 @@
 </g>
 </g>
 <!-- Postscript&#45;&gt;Bib -->
-<g id="edge25" class="edge">
+<g id="edge26" class="edge">
 <title>Postscript&#45;&gt;Bib</title>
 <path fill="none" stroke="gray" d="M105,-83.69C105,-75.03 105,-64.28 105,-54.24"/>
 <polygon fill="gray" stroke="gray" points="108.5,-54.15 105,-44.15 101.5,-54.15 108.5,-54.15"/>
 </g>
 <!-- Equiv&#45;&gt;Hoare -->
-<g id="edge28" class="edge">
+<g id="edge29" class="edge">
 <title>Equiv&#45;&gt;Hoare</title>
-<path fill="none" stroke="blue" d="M134.08,-742C136.55,-742 139.03,-742 141.5,-742"/>
-<polygon fill="blue" stroke="blue" points="141.67,-745.5 151.67,-742 141.67,-738.5 141.67,-745.5"/>
+<path fill="none" stroke="blue" d="M139.08,-742C141.55,-742 144.03,-742 146.5,-742"/>
+<polygon fill="blue" stroke="blue" points="146.67,-745.5 156.67,-742 146.67,-738.5 146.67,-745.5"/>
 </g>
 <!-- PE -->
-<g id="node21" class="node">
+<g id="node22" class="node">
 <title>PE</title>
-<g id="a_node21"><a xlink:href="PE.html" xlink:title="Go to chapter" target="_top">
-<polygon fill="lightyellow" stroke="black" points="127.5,-684 28.5,-684 28.5,-640 127.5,-640 127.5,-684"/>
-<text text-anchor="start" x="72" y="-667.2" font-family="Times,serif" font-size="11.00">PE</text>
-<text text-anchor="start" x="47" y="-650.8" font-family="Times,serif" font-size="9.00">Partial Evaluation</text>
+<g id="a_node22"><a xlink:href="PE.html" xlink:title="Go to chapter" target="_top">
+<polygon fill="lightyellow" stroke="black" points="132.5,-684 33.5,-684 33.5,-640 132.5,-640 132.5,-684"/>
+<text text-anchor="start" x="77" y="-667.2" font-family="Times,serif" font-size="11.00">PE</text>
+<text text-anchor="start" x="52" y="-650.8" font-family="Times,serif" font-size="9.00">Partial Evaluation</text>
 </a>
 </g>
 </g>
 <!-- Equiv&#45;&gt;PE -->
-<g id="edge20" class="edge">
+<g id="edge21" class="edge">
 <title>Equiv&#45;&gt;PE</title>
-<path fill="none" stroke="gray" d="M78,-719.69C78,-711.8 78,-702.68 78,-694.1"/>
-<polygon fill="gray" stroke="gray" points="81.5,-694.02 78,-684.02 74.5,-694.02 81.5,-694.02"/>
+<path fill="none" stroke="gray" d="M83,-719.69C83,-711.8 83,-702.68 83,-694.1"/>
+<polygon fill="gray" stroke="gray" points="86.5,-694.02 83,-684.02 79.5,-694.02 86.5,-694.02"/>
 </g>
 <!-- Hoare1 -->
 <g id="node8" class="node">
 <title>Hoare1</title>
 <g id="a_node8"><a xlink:href="Hoare1.html" xlink:title="Go to chapter" target="_top">
-<polygon fill="lightblue" stroke="black" points="304.5,-684 147.5,-684 147.5,-640 304.5,-640 304.5,-684"/>
-<text text-anchor="start" x="209.5" y="-667.2" font-family="Times,serif" font-size="11.00">Hoare1</text>
-<text text-anchor="start" x="166" y="-650.8" font-family="Times,serif" font-size="9.00">Hoare Logic (Part I, Second Half)</text>
+<polygon fill="lightblue" stroke="black" points="309.5,-684 152.5,-684 152.5,-640 309.5,-640 309.5,-684"/>
+<text text-anchor="start" x="214.5" y="-667.2" font-family="Times,serif" font-size="11.00">Hoare1</text>
+<text text-anchor="start" x="171" y="-650.8" font-family="Times,serif" font-size="9.00">Hoare Logic (Part I, Second Half)</text>
 </a>
 </g>
 </g>
 <!-- Hoare&#45;&gt;Hoare1 -->
 <g id="edge1" class="edge">
 <title>Hoare&#45;&gt;Hoare1</title>
-<path fill="none" stroke="gray" d="M219.91,-719.69C219.28,-711.8 219.1,-702.68 219.37,-694.1"/>
-<polygon fill="gray" stroke="gray" points="222.87,-694.2 219.93,-684.02 215.89,-693.81 222.87,-694.2"/>
+<path fill="none" stroke="gray" d="M224.91,-719.69C224.28,-711.8 224.1,-702.68 224.37,-694.1"/>
+<polygon fill="gray" stroke="gray" points="227.87,-694.2 224.93,-684.02 220.89,-693.81 227.87,-694.2"/>
 </g>
 <!-- Hoare&#45;&gt;Hoare1 -->
-<g id="edge29" class="edge">
+<g id="edge30" class="edge">
 <title>Hoare&#45;&gt;Hoare1</title>
-<path fill="none" stroke="blue" d="M232.09,-719.69C232.72,-711.8 232.9,-702.68 232.63,-694.1"/>
-<polygon fill="blue" stroke="blue" points="236.11,-693.81 232.07,-684.02 229.13,-694.2 236.11,-693.81"/>
+<path fill="none" stroke="blue" d="M237.09,-719.69C237.72,-711.8 237.9,-702.68 237.63,-694.1"/>
+<polygon fill="blue" stroke="blue" points="241.11,-693.81 237.07,-684.02 234.13,-694.2 241.11,-693.81"/>
 </g>
 <!-- Hoare2 -->
 <g id="node9" class="node">
 <title>Hoare2</title>
 <g id="a_node9"><a xlink:href="Hoare2.html" xlink:title="Go to chapter" target="_top">
-<polygon fill="lightblue" stroke="black" points="291,-604 179,-604 179,-560 291,-560 291,-604"/>
-<text text-anchor="start" x="218" y="-587.2" font-family="Times,serif" font-size="11.00">Hoare2</text>
-<text text-anchor="start" x="197" y="-570.8" font-family="Times,serif" font-size="9.00">Hoare Logic (Part II)</text>
+<polygon fill="lightblue" stroke="black" points="177.5,-604 26.5,-604 26.5,-560 177.5,-560 177.5,-604"/>
+<text text-anchor="start" x="85.5" y="-587.2" font-family="Times,serif" font-size="11.00">Hoare2</text>
+<text text-anchor="start" x="45" y="-570.8" font-family="Times,serif" font-size="9.00">Hoare Logic (Part II, First Half)</text>
 </a>
 </g>
 </g>
 <!-- Hoare1&#45;&gt;Hoare2 -->
 <g id="edge2" class="edge">
 <title>Hoare1&#45;&gt;Hoare2</title>
-<path fill="none" stroke="gray" d="M222.37,-639.69C222.65,-631.8 223.52,-622.68 224.79,-614.1"/>
-<polygon fill="gray" stroke="gray" points="228.27,-614.46 226.51,-604.02 221.37,-613.29 228.27,-614.46"/>
+<path fill="none" stroke="gray" d="M190.02,-639.89C173.77,-630.53 155.26,-619.41 139.38,-609.49"/>
+<polygon fill="gray" stroke="gray" points="141.19,-606.49 130.86,-604.12 137.46,-612.42 141.19,-606.49"/>
 </g>
 <!-- Hoare1&#45;&gt;Hoare2 -->
-<g id="edge30" class="edge">
+<g id="edge31" class="edge">
 <title>Hoare1&#45;&gt;Hoare2</title>
-<path fill="none" stroke="blue" d="M234.55,-639.69C236.09,-631.8 237.32,-622.68 238.04,-614.1"/>
-<polygon fill="blue" stroke="blue" points="241.54,-614.21 238.64,-604.02 234.55,-613.79 241.54,-614.21"/>
+<path fill="none" stroke="blue" d="M202.16,-639.89C187.3,-630.44 168.82,-619.2 151.77,-609.22"/>
+<polygon fill="blue" stroke="blue" points="153.42,-606.12 143.01,-604.12 149.9,-612.18 153.42,-606.12"/>
 </g>
 <!-- HoareAsLogic -->
-<g id="node10" class="node">
+<g id="node11" class="node">
 <title>HoareAsLogic</title>
-<g id="a_node10"><a xlink:href="HoareAsLogic.html" xlink:title="Go to chapter" target="_top">
-<polygon fill="lightblue" stroke="black" points="160.5,-604 41.5,-604 41.5,-560 160.5,-560 160.5,-604"/>
-<text text-anchor="start" x="68" y="-587.2" font-family="Times,serif" font-size="11.00">HoareAsLogic</text>
-<text text-anchor="start" x="60" y="-570.8" font-family="Times,serif" font-size="9.00">Hoare Logic as a Logic</text>
+<g id="a_node11"><a xlink:href="HoareAsLogic.html" xlink:title="Go to chapter" target="_top">
+<polygon fill="lightblue" stroke="black" points="314.5,-604 195.5,-604 195.5,-560 314.5,-560 314.5,-604"/>
+<text text-anchor="start" x="222" y="-587.2" font-family="Times,serif" font-size="11.00">HoareAsLogic</text>
+<text text-anchor="start" x="214" y="-570.8" font-family="Times,serif" font-size="9.00">Hoare Logic as a Logic</text>
 </a>
 </g>
 </g>
 <!-- Hoare1&#45;&gt;HoareAsLogic -->
-<g id="edge9" class="edge">
+<g id="edge10" class="edge">
 <title>Hoare1&#45;&gt;HoareAsLogic</title>
-<path fill="none" stroke="gray" d="M192.17,-639.89C177.17,-630.53 159.34,-619.41 143.45,-609.49"/>
-<polygon fill="gray" stroke="gray" points="145.19,-606.45 134.85,-604.12 141.48,-612.39 145.19,-606.45"/>
+<path fill="none" stroke="gray" d="M237.56,-639.69C240.01,-631.71 242.85,-622.48 245.52,-613.82"/>
+<polygon fill="gray" stroke="gray" points="248.94,-614.61 248.53,-604.02 242.25,-612.55 248.94,-614.61"/>
 </g>
-<!-- Hoare2&#45;&gt;Smallstep -->
-<g id="edge31" class="edge">
-<title>Hoare2&#45;&gt;Smallstep</title>
-<path fill="none" stroke="blue" d="M267.84,-604.13C282.57,-614.24 299.79,-626.97 314,-640 320.83,-646.27 353.18,-684.24 376.43,-711.78"/>
-<polygon fill="blue" stroke="blue" points="373.9,-714.2 383.02,-719.59 379.25,-709.69 373.9,-714.2"/>
+<!-- Hoare3 -->
+<g id="node10" class="node">
+<title>Hoare3</title>
+<g id="a_node10"><a xlink:href="Hoare3.html" xlink:title="Go to chapter" target="_top">
+<polygon fill="lightblue" stroke="black" points="182,-524 22,-524 22,-480 182,-480 182,-524"/>
+<text text-anchor="start" x="85" y="-507.2" font-family="Times,serif" font-size="11.00">Hoare3</text>
+<text text-anchor="start" x="40" y="-490.8" font-family="Times,serif" font-size="9.00">Hoare Logic (Part II, Second Half)</text>
+</a>
+</g>
+</g>
+<!-- Hoare2&#45;&gt;Hoare3 -->
+<g id="edge3" class="edge">
+<title>Hoare2&#45;&gt;Hoare3</title>
+<path fill="none" stroke="gray" d="M95.91,-559.69C95.28,-551.8 95.1,-542.68 95.37,-534.1"/>
+<polygon fill="gray" stroke="gray" points="98.87,-534.2 95.93,-524.02 91.89,-533.81 98.87,-534.2"/>
+</g>
+<!-- Hoare2&#45;&gt;Hoare3 -->
+<g id="edge32" class="edge">
+<title>Hoare2&#45;&gt;Hoare3</title>
+<path fill="none" stroke="blue" d="M108.09,-559.69C108.72,-551.8 108.9,-542.68 108.63,-534.1"/>
+<polygon fill="blue" stroke="blue" points="112.11,-533.81 108.07,-524.02 105.13,-534.2 112.11,-533.81"/>
+</g>
+<!-- Hoare3&#45;&gt;Smallstep -->
+<g id="edge33" class="edge">
+<title>Hoare3&#45;&gt;Smallstep</title>
+<path fill="none" stroke="blue" d="M182.04,-504.85C228.92,-510.05 286.17,-524.14 324,-560 365.93,-599.75 336.55,-632.64 363,-684 367.99,-693.69 374.62,-703.44 381.18,-712.08"/>
+<polygon fill="blue" stroke="blue" points="378.46,-714.28 387.39,-719.97 383.96,-709.95 378.46,-714.28"/>
 </g>
 <!-- RelHoare -->
-<g id="node23" class="node">
+<g id="node24" class="node">
 <title>RelHoare</title>
-<g id="a_node23"><a xlink:href="RelHoare.html" xlink:title="Go to chapter" target="_top">
-<polygon fill="lightyellow" stroke="black" points="294,-524 176,-524 176,-480 294,-480 294,-524"/>
-<text text-anchor="start" x="213" y="-507.2" font-family="Times,serif" font-size="11.00">RelHoare</text>
-<text text-anchor="start" x="194" y="-490.8" font-family="Times,serif" font-size="9.00">Relational Hoare Logic</text>
+<g id="a_node24"><a xlink:href="RelHoare.html" xlink:title="Go to chapter" target="_top">
+<polygon fill="lightyellow" stroke="black" points="161,-444 43,-444 43,-400 161,-400 161,-444"/>
+<text text-anchor="start" x="80" y="-427.2" font-family="Times,serif" font-size="11.00">RelHoare</text>
+<text text-anchor="start" x="61" y="-410.8" font-family="Times,serif" font-size="9.00">Relational Hoare Logic</text>
 </a>
 </g>
 </g>
-<!-- Hoare2&#45;&gt;RelHoare -->
-<g id="edge3" class="edge">
-<title>Hoare2&#45;&gt;RelHoare</title>
-<path fill="none" stroke="gray" d="M235,-559.69C235,-551.8 235,-542.68 235,-534.1"/>
-<polygon fill="gray" stroke="gray" points="238.5,-534.02 235,-524.02 231.5,-534.02 238.5,-534.02"/>
+<!-- Hoare3&#45;&gt;RelHoare -->
+<g id="edge4" class="edge">
+<title>Hoare3&#45;&gt;RelHoare</title>
+<path fill="none" stroke="gray" d="M102,-479.69C102,-471.8 102,-462.68 102,-454.1"/>
+<polygon fill="gray" stroke="gray" points="105.5,-454.02 102,-444.02 98.5,-454.02 105.5,-454.02"/>
 </g>
 <!-- Types -->
-<g id="node12" class="node">
+<g id="node13" class="node">
 <title>Types</title>
-<g id="a_node12"><a xlink:href="Types.html" xlink:title="Go to chapter" target="_top">
-<polygon fill="lightblue" stroke="black" points="448.5,-684 361.5,-684 361.5,-640 448.5,-640 448.5,-684"/>
-<text text-anchor="start" x="392" y="-667.2" font-family="Times,serif" font-size="11.00">Types</text>
-<text text-anchor="start" x="380" y="-650.8" font-family="Times,serif" font-size="9.00">Type Systems</text>
+<g id="a_node13"><a xlink:href="Types.html" xlink:title="Go to chapter" target="_top">
+<polygon fill="lightblue" stroke="black" points="458.5,-684 371.5,-684 371.5,-640 458.5,-640 458.5,-684"/>
+<text text-anchor="start" x="402" y="-667.2" font-family="Times,serif" font-size="11.00">Types</text>
+<text text-anchor="start" x="390" y="-650.8" font-family="Times,serif" font-size="9.00">Type Systems</text>
 </a>
 </g>
 </g>
 <!-- Smallstep&#45;&gt;Types -->
-<g id="edge4" class="edge">
+<g id="edge5" class="edge">
 <title>Smallstep&#45;&gt;Types</title>
-<path fill="none" stroke="gray" d="M396,-719.69C395.78,-711.8 396.07,-702.68 396.78,-694.1"/>
-<polygon fill="gray" stroke="gray" points="400.27,-694.33 397.86,-684.02 393.31,-693.59 400.27,-694.33"/>
+<path fill="none" stroke="gray" d="M402.37,-719.69C402.65,-711.8 403.52,-702.68 404.79,-694.1"/>
+<polygon fill="gray" stroke="gray" points="408.27,-694.46 406.51,-684.02 401.37,-693.29 408.27,-694.46"/>
 </g>
 <!-- Smallstep&#45;&gt;Types -->
-<g id="edge32" class="edge">
+<g id="edge34" class="edge">
 <title>Smallstep&#45;&gt;Types</title>
-<path fill="none" stroke="blue" d="M408.18,-719.69C409.22,-711.8 409.86,-702.68 410.03,-694.1"/>
-<polygon fill="blue" stroke="blue" points="413.53,-694 409.99,-684.02 406.53,-694.03 413.53,-694"/>
+<path fill="none" stroke="blue" d="M414.55,-719.69C416.09,-711.8 417.32,-702.68 418.04,-694.1"/>
+<polygon fill="blue" stroke="blue" points="421.54,-694.21 418.64,-684.02 414.55,-693.79 421.54,-694.21"/>
 </g>
 <!-- Stlc -->
-<g id="node13" class="node">
+<g id="node14" class="node">
 <title>Stlc</title>
-<g id="a_node13"><a xlink:href="Stlc.html" xlink:title="Go to chapter" target="_top">
-<polygon fill="lightblue" stroke="black" points="488.5,-604 321.5,-604 321.5,-560 488.5,-560 488.5,-604"/>
-<text text-anchor="start" x="396.5" y="-587.2" font-family="Times,serif" font-size="11.00">Stlc</text>
-<text text-anchor="start" x="340" y="-570.8" font-family="Times,serif" font-size="9.00">The Simply Typed Lambda&#45;Calculus</text>
+<g id="a_node14"><a xlink:href="Stlc.html" xlink:title="Go to chapter" target="_top">
+<polygon fill="lightblue" stroke="black" points="537.5,-604 370.5,-604 370.5,-560 537.5,-560 537.5,-604"/>
+<text text-anchor="start" x="445.5" y="-587.2" font-family="Times,serif" font-size="11.00">Stlc</text>
+<text text-anchor="start" x="389" y="-570.8" font-family="Times,serif" font-size="9.00">The Simply Typed Lambda&#45;Calculus</text>
 </a>
 </g>
 </g>
 <!-- Types&#45;&gt;Stlc -->
-<g id="edge5" class="edge">
+<g id="edge6" class="edge">
 <title>Types&#45;&gt;Stlc</title>
-<path fill="none" stroke="gray" d="M398.91,-639.69C398.28,-631.8 398.1,-622.68 398.37,-614.1"/>
-<polygon fill="gray" stroke="gray" points="401.87,-614.2 398.93,-604.02 394.89,-613.81 401.87,-614.2"/>
+<path fill="none" stroke="gray" d="M419.57,-639.69C423.03,-631.45 427.65,-621.88 432.43,-612.97"/>
+<polygon fill="gray" stroke="gray" points="435.61,-614.46 437.42,-604.02 429.49,-611.04 435.61,-614.46"/>
 </g>
 <!-- Types&#45;&gt;Stlc -->
-<g id="edge33" class="edge">
+<g id="edge35" class="edge">
 <title>Types&#45;&gt;Stlc</title>
-<path fill="none" stroke="blue" d="M411.09,-639.69C411.72,-631.8 411.9,-622.68 411.63,-614.1"/>
-<polygon fill="blue" stroke="blue" points="415.11,-613.81 411.07,-604.02 408.13,-614.2 415.11,-613.81"/>
+<path fill="none" stroke="blue" d="M431.75,-639.69C436.47,-631.54 441.37,-622.08 445.47,-613.26"/>
+<polygon fill="blue" stroke="blue" points="448.71,-614.58 449.56,-604.02 442.31,-611.75 448.71,-614.58"/>
 </g>
 <!-- StlcProp -->
-<g id="node14" class="node">
+<g id="node15" class="node">
 <title>StlcProp</title>
-<g id="a_node14"><a xlink:href="StlcProp.html" xlink:title="Go to chapter" target="_top">
-<polygon fill="lightblue" stroke="black" points="439,-524 333,-524 333,-480 439,-480 439,-524"/>
-<text text-anchor="start" x="367" y="-507.2" font-family="Times,serif" font-size="11.00">StlcProp</text>
-<text text-anchor="start" x="351" y="-490.8" font-family="Times,serif" font-size="9.00">Properties of STLC</text>
+<g id="a_node15"><a xlink:href="StlcProp.html" xlink:title="Go to chapter" target="_top">
+<polygon fill="lightblue" stroke="black" points="399,-524 293,-524 293,-480 399,-480 399,-524"/>
+<text text-anchor="start" x="327" y="-507.2" font-family="Times,serif" font-size="11.00">StlcProp</text>
+<text text-anchor="start" x="311" y="-490.8" font-family="Times,serif" font-size="9.00">Properties of STLC</text>
 </a>
 </g>
 </g>
 <!-- Stlc&#45;&gt;StlcProp -->
-<g id="edge6" class="edge">
+<g id="edge7" class="edge">
 <title>Stlc&#45;&gt;StlcProp</title>
-<path fill="none" stroke="gray" d="M393.72,-559.69C391.17,-551.8 388.77,-542.68 386.95,-534.1"/>
-<polygon fill="gray" stroke="gray" points="390.34,-533.2 385.05,-524.02 383.46,-534.49 390.34,-533.2"/>
+<path fill="none" stroke="gray" d="M418.7,-559.89C405.35,-550.79 390.32,-540.02 377.35,-530.32"/>
+<polygon fill="gray" stroke="gray" points="379.26,-527.37 369.17,-524.12 375.03,-532.95 379.26,-527.37"/>
 </g>
 <!-- Stlc&#45;&gt;StlcProp -->
-<g id="edge34" class="edge">
+<g id="edge36" class="edge">
 <title>Stlc&#45;&gt;StlcProp</title>
-<path fill="none" stroke="blue" d="M405.9,-559.69C404.59,-551.71 402.52,-542.48 400.12,-533.82"/>
-<polygon fill="blue" stroke="blue" points="403.41,-532.59 397.19,-524.02 396.7,-534.6 403.41,-532.59"/>
+<path fill="none" stroke="blue" d="M430.85,-559.89C418.87,-550.7 403.93,-539.82 389.9,-530.04"/>
+<polygon fill="blue" stroke="blue" points="391.54,-526.92 381.33,-524.12 387.57,-532.68 391.54,-526.92"/>
 </g>
 <!-- Typechecking -->
-<g id="node16" class="node">
+<g id="node17" class="node">
 <title>Typechecking</title>
-<g id="a_node16"><a xlink:href="Typechecking.html" xlink:title="Go to chapter" target="_top">
+<g id="a_node17"><a xlink:href="Typechecking.html" xlink:title="Go to chapter" target="_top">
 <polygon fill="lightblue" stroke="black" points="603.5,-364 476.5,-364 476.5,-320 603.5,-320 603.5,-364"/>
 <text text-anchor="start" x="509.5" y="-347.2" font-family="Times,serif" font-size="11.00">Typechecking</text>
 <text text-anchor="start" x="495" y="-330.8" font-family="Times,serif" font-size="9.00">A Typechecker for STLC</text>
@@ -321,43 +343,43 @@
 </g>
 </g>
 <!-- Stlc&#45;&gt;Typechecking -->
-<g id="edge13" class="edge">
+<g id="edge14" class="edge">
 <title>Stlc&#45;&gt;Typechecking</title>
-<path fill="none" stroke="gray" d="M421.98,-559.8C430.17,-549.27 439.93,-536.2 448,-524 470.62,-489.78 475.26,-480.48 494,-444 505.96,-420.73 518.17,-393.73 527,-373.51"/>
-<polygon fill="gray" stroke="gray" points="530.29,-374.73 531.05,-364.17 523.86,-371.95 530.29,-374.73"/>
+<path fill="none" stroke="gray" d="M461.63,-559.88C476.9,-517.63 511.26,-422.55 528.97,-373.52"/>
+<polygon fill="gray" stroke="gray" points="532.28,-374.67 532.39,-364.07 525.7,-372.29 532.28,-374.67"/>
 </g>
 <!-- MoreStlc -->
-<g id="node15" class="node">
+<g id="node16" class="node">
 <title>MoreStlc</title>
-<g id="a_node15"><a xlink:href="MoreStlc.html" xlink:title="Go to chapter" target="_top">
-<polygon fill="lightblue" stroke="black" points="484.5,-444 287.5,-444 287.5,-400 484.5,-400 484.5,-444"/>
-<text text-anchor="start" x="365.5" y="-427.2" font-family="Times,serif" font-size="11.00">MoreStlc</text>
-<text text-anchor="start" x="306" y="-410.8" font-family="Times,serif" font-size="9.00">More on the Simply Typed Lambda&#45;Calculus</text>
+<g id="a_node16"><a xlink:href="MoreStlc.html" xlink:title="Go to chapter" target="_top">
+<polygon fill="lightblue" stroke="black" points="444.5,-444 247.5,-444 247.5,-400 444.5,-400 444.5,-444"/>
+<text text-anchor="start" x="325.5" y="-427.2" font-family="Times,serif" font-size="11.00">MoreStlc</text>
+<text text-anchor="start" x="266" y="-410.8" font-family="Times,serif" font-size="9.00">More on the Simply Typed Lambda&#45;Calculus</text>
 </a>
 </g>
 </g>
 <!-- StlcProp&#45;&gt;MoreStlc -->
-<g id="edge7" class="edge">
+<g id="edge8" class="edge">
 <title>StlcProp&#45;&gt;MoreStlc</title>
-<path fill="none" stroke="gray" d="M379.91,-479.69C379.28,-471.8 379.1,-462.68 379.37,-454.1"/>
-<polygon fill="gray" stroke="gray" points="382.87,-454.2 379.93,-444.02 375.89,-453.81 382.87,-454.2"/>
+<path fill="none" stroke="gray" d="M339.91,-479.69C339.28,-471.8 339.1,-462.68 339.37,-454.1"/>
+<polygon fill="gray" stroke="gray" points="342.87,-454.2 339.93,-444.02 335.89,-453.81 342.87,-454.2"/>
 </g>
 <!-- StlcProp&#45;&gt;MoreStlc -->
-<g id="edge35" class="edge">
+<g id="edge37" class="edge">
 <title>StlcProp&#45;&gt;MoreStlc</title>
-<path fill="none" stroke="blue" d="M392.09,-479.69C392.72,-471.8 392.9,-462.68 392.63,-454.1"/>
-<polygon fill="blue" stroke="blue" points="396.11,-453.81 392.07,-444.02 389.13,-454.2 396.11,-453.81"/>
+<path fill="none" stroke="blue" d="M352.09,-479.69C352.72,-471.8 352.9,-462.68 352.63,-454.1"/>
+<polygon fill="blue" stroke="blue" points="356.11,-453.81 352.07,-444.02 349.13,-454.2 356.11,-453.81"/>
 </g>
 <!-- MoreStlc&#45;&gt;Typechecking -->
-<g id="edge36" class="edge">
+<g id="edge38" class="edge">
 <title>MoreStlc&#45;&gt;Typechecking</title>
-<path fill="none" stroke="blue" d="M427.67,-399.89C446.68,-390.27 469.34,-378.79 489.32,-368.67"/>
-<polygon fill="blue" stroke="blue" points="490.95,-371.77 498.29,-364.12 487.79,-365.52 490.95,-371.77"/>
+<path fill="none" stroke="blue" d="M398.24,-399.99C422.93,-390.07 452.57,-378.15 478.36,-367.78"/>
+<polygon fill="blue" stroke="blue" points="479.69,-371.02 487.66,-364.04 477.08,-364.53 479.69,-371.02"/>
 </g>
 <!-- References -->
-<g id="node17" class="node">
+<g id="node18" class="node">
 <title>References</title>
-<g id="a_node17"><a xlink:href="References.html" xlink:title="Go to chapter" target="_top">
+<g id="a_node18"><a xlink:href="References.html" xlink:title="Go to chapter" target="_top">
 <polygon fill="lightblue" stroke="black" points="319.5,-364 184.5,-364 184.5,-320 319.5,-320 319.5,-364"/>
 <text text-anchor="start" x="226.5" y="-347.2" font-family="Times,serif" font-size="11.00">References</text>
 <text text-anchor="start" x="203" y="-330.8" font-family="Times,serif" font-size="9.00">Typing Mutable References</text>
@@ -365,15 +387,15 @@
 </g>
 </g>
 <!-- MoreStlc&#45;&gt;References -->
-<g id="edge8" class="edge">
+<g id="edge9" class="edge">
 <title>MoreStlc&#45;&gt;References</title>
-<path fill="none" stroke="gray" d="M349.74,-399.89C333.5,-390.44 314.19,-379.2 297.04,-369.22"/>
-<polygon fill="gray" stroke="gray" points="298.69,-366.13 288.29,-364.12 295.17,-372.18 298.69,-366.13"/>
+<path fill="none" stroke="gray" d="M320.31,-399.69C309.45,-390.67 296.66,-380.06 285.1,-370.46"/>
+<polygon fill="gray" stroke="gray" points="287.26,-367.71 277.33,-364.02 282.79,-373.1 287.26,-367.71"/>
 </g>
 <!-- Sub -->
-<g id="node18" class="node">
+<g id="node19" class="node">
 <title>Sub</title>
-<g id="a_node18"><a xlink:href="Sub.html" xlink:title="Go to chapter" target="_top">
+<g id="a_node19"><a xlink:href="Sub.html" xlink:title="Go to chapter" target="_top">
 <polygon fill="lightblue" stroke="black" points="192.5,-284 119.5,-284 119.5,-240 192.5,-240 192.5,-284"/>
 <text text-anchor="start" x="148" y="-267.2" font-family="Times,serif" font-size="11.00">Sub</text>
 <text text-anchor="start" x="138" y="-250.8" font-family="Times,serif" font-size="9.00">Subtyping</text>
@@ -381,15 +403,15 @@
 </g>
 </g>
 <!-- MoreStlc&#45;&gt;Sub -->
-<g id="edge12" class="edge">
+<g id="edge13" class="edge">
 <title>MoreStlc&#45;&gt;Sub</title>
-<path fill="none" stroke="gray" d="M287.4,-404.53C240.75,-394.76 191.81,-380.96 176,-364 158.71,-345.47 154.44,-316.48 154.07,-294.3"/>
-<polygon fill="gray" stroke="gray" points="157.57,-294.07 154.16,-284.04 150.57,-294.01 157.57,-294.07"/>
+<path fill="none" stroke="gray" d="M247.16,-406.58C220.71,-398.18 194.4,-384.92 176,-364 159.36,-345.08 154.98,-316.38 154.41,-294.4"/>
+<polygon fill="gray" stroke="gray" points="157.91,-294.22 154.39,-284.23 150.91,-294.23 157.91,-294.22"/>
 </g>
 <!-- Records -->
-<g id="node19" class="node">
+<g id="node20" class="node">
 <title>Records</title>
-<g id="a_node19"><a xlink:href="Records.html" xlink:title="Go to chapter" target="_top">
+<g id="a_node20"><a xlink:href="Records.html" xlink:title="Go to chapter" target="_top">
 <polygon fill="lightblue" stroke="black" points="128,-364 0,-364 0,-320 128,-320 128,-364"/>
 <text text-anchor="start" x="45.5" y="-347.2" font-family="Times,serif" font-size="11.00">Records</text>
 <text text-anchor="start" x="18" y="-330.8" font-family="Times,serif" font-size="9.00">Adding Records to STLC</text>
@@ -397,15 +419,15 @@
 </g>
 </g>
 <!-- MoreStlc&#45;&gt;Records -->
-<g id="edge10" class="edge">
+<g id="edge11" class="edge">
 <title>MoreStlc&#45;&gt;Records</title>
-<path fill="none" stroke="gray" d="M292.55,-399.94C247.04,-389.49 191.57,-376.46 142,-364 140.74,-363.68 139.46,-363.36 138.18,-363.04"/>
-<polygon fill="gray" stroke="gray" points="138.79,-359.58 128.23,-360.48 137.04,-366.36 138.79,-359.58"/>
+<path fill="none" stroke="gray" d="M270.06,-399.99C229.07,-388.66 178.68,-374.72 137.99,-363.47"/>
+<polygon fill="gray" stroke="gray" points="138.7,-360.03 128.13,-360.74 136.84,-366.78 138.7,-360.03"/>
 </g>
 <!-- Norm -->
-<g id="node22" class="node">
+<g id="node23" class="node">
 <title>Norm</title>
-<g id="a_node22"><a xlink:href="Norm.html" xlink:title="Go to chapter" target="_top">
+<g id="a_node23"><a xlink:href="Norm.html" xlink:title="Go to chapter" target="_top">
 <polygon fill="lightyellow" stroke="black" points="458.5,-364 337.5,-364 337.5,-320 458.5,-320 458.5,-364"/>
 <text text-anchor="start" x="385.5" y="-347.2" font-family="Times,serif" font-size="11.00">Norm</text>
 <text text-anchor="start" x="356" y="-330.8" font-family="Times,serif" font-size="9.00">Normalization of STLC</text>
@@ -413,33 +435,33 @@
 </g>
 </g>
 <!-- MoreStlc&#45;&gt;Norm -->
-<g id="edge15" class="edge">
+<g id="edge16" class="edge">
 <title>MoreStlc&#45;&gt;Norm</title>
-<path fill="none" stroke="gray" d="M389.28,-399.69C390.49,-391.8 391.89,-382.68 393.21,-374.1"/>
-<polygon fill="gray" stroke="gray" points="396.71,-374.43 394.77,-364.02 389.79,-373.37 396.71,-374.43"/>
+<path fill="none" stroke="gray" d="M360.21,-399.69C365.82,-391.28 372.35,-381.48 378.39,-372.41"/>
+<polygon fill="gray" stroke="gray" points="381.35,-374.28 383.99,-364.02 375.53,-370.4 381.35,-374.28"/>
 </g>
 <!-- Typechecking&#45;&gt;References -->
-<g id="edge37" class="edge">
+<g id="edge39" class="edge">
 <title>Typechecking&#45;&gt;References</title>
 <path fill="none" stroke="blue" d="M504.24,-364.06C490.6,-371.27 474.58,-378.36 459,-382 406.63,-394.23 390.51,-393.61 338,-382 324.93,-379.11 311.49,-374.02 299.23,-368.42"/>
 <polygon fill="blue" stroke="blue" points="300.65,-365.22 290.12,-364.07 297.63,-371.54 300.65,-365.22"/>
 </g>
 <!-- References&#45;&gt;Sub -->
-<g id="edge38" class="edge">
+<g id="edge40" class="edge">
 <title>References&#45;&gt;Sub</title>
 <path fill="none" stroke="blue" d="M226.02,-319.89C214.92,-310.87 201.82,-300.23 189.97,-290.6"/>
 <polygon fill="blue" stroke="blue" points="191.97,-287.71 182,-284.12 187.55,-293.15 191.97,-287.71"/>
 </g>
 <!-- Sub&#45;&gt;Records -->
-<g id="edge39" class="edge">
+<g id="edge41" class="edge">
 <title>Sub&#45;&gt;Records</title>
 <path fill="none" stroke="blue" d="M131.21,-284.02C120.72,-292.91 108.35,-303.4 97.09,-312.94"/>
 <polygon fill="blue" stroke="blue" points="94.5,-310.55 89.14,-319.69 99.03,-315.89 94.5,-310.55"/>
 </g>
 <!-- RecordSub -->
-<g id="node20" class="node">
+<g id="node21" class="node">
 <title>RecordSub</title>
-<g id="a_node20"><a xlink:href="RecordSub.html" xlink:title="Go to chapter" target="_top">
+<g id="a_node21"><a xlink:href="RecordSub.html" xlink:title="Go to chapter" target="_top">
 <polygon fill="lightblue" stroke="black" points="166.5,-204 43.5,-204 43.5,-160 166.5,-160 166.5,-204"/>
 <text text-anchor="start" x="81" y="-187.2" font-family="Times,serif" font-size="11.00">RecordSub</text>
 <text text-anchor="start" x="62" y="-170.8" font-family="Times,serif" font-size="9.00">Subtyping with Records</text>
@@ -447,15 +469,15 @@
 </g>
 </g>
 <!-- Sub&#45;&gt;RecordSub -->
-<g id="edge14" class="edge">
+<g id="edge15" class="edge">
 <title>Sub&#45;&gt;RecordSub</title>
 <path fill="none" stroke="gray" d="M142.06,-239.69C136.57,-231.28 130.16,-221.48 124.23,-212.41"/>
 <polygon fill="gray" stroke="gray" points="127.14,-210.47 118.74,-204.02 121.29,-214.3 127.14,-210.47"/>
 </g>
 <!-- UseTactics -->
-<g id="node25" class="node">
+<g id="node26" class="node">
 <title>UseTactics</title>
-<g id="a_node25"><a xlink:href="UseTactics.html" xlink:title="Go to chapter" target="_top">
+<g id="a_node26"><a xlink:href="UseTactics.html" xlink:title="Go to chapter" target="_top">
 <polygon fill="lightyellow" stroke="black" points="407,-204 209,-204 209,-160 407,-160 407,-204"/>
 <text text-anchor="start" x="283" y="-187.2" font-family="Times,serif" font-size="11.00">UseTactics</text>
 <text text-anchor="start" x="227" y="-170.8" font-family="Times,serif" font-size="9.00">Tactic Library for Coq: A Gentle Introduction</text>
@@ -463,48 +485,48 @@
 </g>
 </g>
 <!-- Sub&#45;&gt;UseTactics -->
-<g id="edge19" class="edge">
+<g id="edge20" class="edge">
 <title>Sub&#45;&gt;UseTactics</title>
 <path fill="none" stroke="gray" d="M192.79,-242.12C212.4,-232.06 236.8,-219.54 258.08,-208.61"/>
 <polygon fill="gray" stroke="gray" points="259.7,-211.72 266.99,-204.04 256.5,-205.49 259.7,-211.72"/>
 </g>
 <!-- Records&#45;&gt;RecordSub -->
-<g id="edge11" class="edge">
+<g id="edge12" class="edge">
 <title>Records&#45;&gt;RecordSub</title>
 <path fill="none" stroke="gray" d="M64.74,-319.69C69.46,-292.4 81.55,-244.93 91.55,-213.73"/>
 <polygon fill="gray" stroke="gray" points="94.88,-214.82 94.71,-204.22 88.24,-212.61 94.88,-214.82"/>
 </g>
 <!-- Records&#45;&gt;RecordSub -->
-<g id="edge40" class="edge">
+<g id="edge42" class="edge">
 <title>Records&#45;&gt;RecordSub</title>
 <path fill="none" stroke="blue" d="M74.32,-319.69C83.72,-292.52 96.2,-245.34 102.42,-214.14"/>
 <polygon fill="blue" stroke="blue" points="105.88,-214.7 104.27,-204.22 98.99,-213.41 105.88,-214.7"/>
 </g>
 <!-- RecordSub&#45;&gt;Postscript -->
-<g id="edge41" class="edge">
+<g id="edge43" class="edge">
 <title>RecordSub&#45;&gt;Postscript</title>
 <path fill="none" stroke="blue" d="M105,-159.69C105,-150.64 105,-139.99 105,-130.37"/>
 <polygon fill="blue" stroke="blue" points="108.5,-130.09 105,-120.09 101.5,-130.09 108.5,-130.09"/>
 </g>
 <!-- LibTactics -->
-<g id="node24" class="node">
+<g id="node25" class="node">
 <title>LibTactics</title>
-<g id="a_node24"><a xlink:href="LibTactics.html" xlink:title="Go to chapter" target="_top">
+<g id="a_node25"><a xlink:href="LibTactics.html" xlink:title="Go to chapter" target="_top">
 <polygon fill="none" stroke="black" stroke-dasharray="1,5" points="386.5,-280 311.5,-280 311.5,-244 386.5,-244 386.5,-280"/>
 <text text-anchor="middle" x="349" y="-259.2" font-family="Times,serif" font-size="11.00">LibTactics</text>
 </a>
 </g>
 </g>
 <!-- LibTactics&#45;&gt;UseTactics -->
-<g id="edge16" class="edge">
+<g id="edge17" class="edge">
 <title>LibTactics&#45;&gt;UseTactics</title>
 <path fill="none" stroke="gray" d="M339.9,-243.69C335.2,-234.76 329.34,-223.59 323.92,-213.29"/>
 <polygon fill="gray" stroke="gray" points="326.87,-211.38 319.12,-204.15 320.67,-214.63 326.87,-211.38"/>
 </g>
 <!-- UseAuto -->
-<g id="node26" class="node">
+<g id="node27" class="node">
 <title>UseAuto</title>
-<g id="a_node26"><a xlink:href="UseAuto.html" xlink:title="Go to chapter" target="_top">
+<g id="a_node27"><a xlink:href="UseAuto.html" xlink:title="Go to chapter" target="_top">
 <polygon fill="lightyellow" stroke="black" points="424.5,-124 211.5,-124 211.5,-80 424.5,-80 424.5,-124"/>
 <text text-anchor="start" x="298.5" y="-107.2" font-family="Times,serif" font-size="11.00">UseAuto</text>
 <text text-anchor="start" x="230" y="-90.8" font-family="Times,serif" font-size="9.00">Theory and Practice of Automation in Coq Proofs</text>
@@ -512,13 +534,13 @@
 </g>
 </g>
 <!-- LibTactics&#45;&gt;UseAuto -->
-<g id="edge17" class="edge">
+<g id="edge18" class="edge">
 <title>LibTactics&#45;&gt;UseAuto</title>
 <path fill="none" stroke="gray" d="M379.13,-243.92C393.11,-234.2 408.31,-220.64 416,-204 424.2,-186.25 425.75,-176.95 416,-160 408.7,-147.32 397.38,-137.19 384.98,-129.21"/>
 <polygon fill="gray" stroke="gray" points="386.65,-126.13 376.27,-124.02 383.07,-132.14 386.65,-126.13"/>
 </g>
 <!-- UseTactics&#45;&gt;UseAuto -->
-<g id="edge18" class="edge">
+<g id="edge19" class="edge">
 <title>UseTactics&#45;&gt;UseAuto</title>
 <path fill="none" stroke="gray" d="M310.73,-159.69C311.74,-151.8 312.91,-142.68 314.01,-134.1"/>
 <polygon fill="gray" stroke="gray" points="317.51,-134.38 315.31,-124.02 310.56,-133.49 317.51,-134.38"/>
