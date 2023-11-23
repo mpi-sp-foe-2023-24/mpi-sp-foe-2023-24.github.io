@@ -86,7 +86,7 @@ Up to this point, we have considered a variety of <i>pure</i>
 </div>
 
 <div class="doc">
-<a id="lab420"></a><h1 class="section">Definitions</h1>
+<a id="lab433"></a><h1 class="section">Definitions</h1>
 
 <div class="paragraph"> </div>
 
@@ -128,7 +128,7 @@ Up to this point, we have considered a variety of <i>pure</i>
 </div>
 
 <div class="doc">
-<a id="lab421"></a><h1 class="section">Syntax</h1>
+<a id="lab434"></a><h1 class="section">Syntax</h1>
 
 <div class="paragraph"> </div>
 
@@ -183,7 +183,7 @@ The basic operations on references are <i>allocation</i>,
 </div>
 
 <div class="doc">
-<a id="lab422"></a><h3 class="section">Types</h3>
+<a id="lab435"></a><h3 class="section">Types</h3>
 
 <div class="paragraph"> </div>
 
@@ -214,7 +214,7 @@ The basic operations on references are <i>allocation</i>,
 </div>
 
 <div class="doc">
-<a id="lab423"></a><h3 class="section">Terms</h3>
+<a id="lab436"></a><h3 class="section">Terms</h3>
 
 <div class="paragraph"> </div>
 
@@ -326,7 +326,7 @@ Intuitively:
 </div>
 
 <div class="doc">
-<a id="lab424"></a><h3 class="section">Typing (Preview)</h3>
+<a id="lab437"></a><h3 class="section">Typing (Preview)</h3>
 
 <div class="paragraph"> </div>
 
@@ -381,7 +381,7 @@ Intuitively:
 </div>
 
 <div class="doc">
-<a id="lab425"></a><h3 class="section">Values and Substitution</h3>
+<a id="lab438"></a><h3 class="section">Values and Substitution</h3>
 
 <div class="paragraph"> </div>
 
@@ -448,12 +448,12 @@ Extending substitution to handle the new syntax of terms is
 </div>
 
 <div class="doc">
-<a id="lab426"></a><h1 class="section">Pragmatics</h1>
+<a id="lab439"></a><h1 class="section">Pragmatics</h1>
 
 </div>
 
 <div class="doc">
-<a id="lab427"></a><h2 class="section">Side Effects and Sequencing</h2>
+<a id="lab440"></a><h2 class="section">Side Effects and Sequencing</h2>
 
 <div class="paragraph"> </div>
 
@@ -499,7 +499,7 @@ Extending substitution to handle the new syntax of terms is
 </div>
 
 <div class="doc">
-<a id="lab428"></a><h2 class="section">References and Aliasing</h2>
+<a id="lab441"></a><h2 class="section">References and Aliasing</h2>
 
 <div class="paragraph"> </div>
 
@@ -549,7 +549,7 @@ Extending substitution to handle the new syntax of terms is
 </div>
 
 <div class="doc">
-<a id="lab429"></a><h2 class="section">Shared State</h2>
+<a id="lab442"></a><h2 class="section">Shared State</h2>
 
 <div class="paragraph"> </div>
 
@@ -589,7 +589,7 @@ Extending substitution to handle the new syntax of terms is
 </div>
 
 <div class="doc">
-<a id="lab430"></a><h2 class="section">Objects</h2>
+<a id="lab443"></a><h2 class="section">Objects</h2>
 
 <div class="paragraph"> </div>
 
@@ -623,7 +623,7 @@ Extending substitution to handle the new syntax of terms is
  
 <div class="paragraph"> </div>
 
-<a id="lab431"></a><h4 class="section">Exercise: 1 star, standard, optional (store_draw)</h4>
+<a id="lab444"></a><h4 class="section">Exercise: 1 star, standard, optional (store_draw)</h4>
  Draw (on paper) the contents of the store at the point in
     execution where the first two <span class="inlinecode"><span class="id" title="keyword">let</span></span>s have finished and the third
     one is about to begin. 
@@ -636,7 +636,7 @@ Extending substitution to handle the new syntax of terms is
 
 
 <div class="doc">
-<a id="lab432"></a><h2 class="section">References to Compound Types</h2>
+<a id="lab445"></a><h2 class="section">References to Compound Types</h2>
 
 <div class="paragraph"> </div>
 
@@ -699,7 +699,7 @@ Extending substitution to handle the new syntax of terms is
     lists and trees. 
 <div class="paragraph"> </div>
 
-<a id="lab433"></a><h4 class="section">Exercise: 2 stars, standard, especially useful (compact_update)</h4>
+<a id="lab446"></a><h4 class="section">Exercise: 2 stars, standard, especially useful (compact_update)</h4>
  If we defined <span class="inlinecode"><span class="id" title="var">update</span></span> more compactly like this
 <pre>
       update = \a:NatArray. \m:Nat. \v:Nat.
@@ -717,7 +717,7 @@ would it behave the same?
 
 
 <div class="doc">
-<a id="lab434"></a><h2 class="section">Null References</h2>
+<a id="lab447"></a><h2 class="section">Null References</h2>
 
 <div class="paragraph"> </div>
 
@@ -752,7 +752,7 @@ would it behave the same?
 </div>
 
 <div class="doc">
-<a id="lab435"></a><h2 class="section">Garbage Collection</h2>
+<a id="lab448"></a><h2 class="section">Garbage Collection</h2>
 
 <div class="paragraph"> </div>
 
@@ -776,7 +776,7 @@ would it behave the same?
     other with type <span class="inlinecode"><span class="id" title="var">Ref</span></span> <span class="inlinecode"><span class="id" title="var">Bool</span></span>. 
 <div class="paragraph"> </div>
 
-<a id="lab436"></a><h4 class="section">Exercise: 2 stars, standard (type_safety_violation)</h4>
+<a id="lab449"></a><h4 class="section">Exercise: 2 stars, standard (type_safety_violation)</h4>
  Show how this can lead to a violation of type safety. 
 </div>
 <div class="code">
@@ -789,12 +789,12 @@ would it behave the same?
 
 
 <div class="doc">
-<a id="lab437"></a><h1 class="section">Operational Semantics</h1>
+<a id="lab450"></a><h1 class="section">Operational Semantics</h1>
 
 </div>
 
 <div class="doc">
-<a id="lab438"></a><h2 class="section">Locations</h2>
+<a id="lab451"></a><h2 class="section">Locations</h2>
 
 <div class="paragraph"> </div>
 
@@ -848,7 +848,7 @@ would it behave the same?
 </div>
 
 <div class="doc">
-<a id="lab439"></a><h2 class="section">Stores</h2>
+<a id="lab452"></a><h2 class="section">Stores</h2>
 
 <div class="paragraph"> </div>
 
@@ -981,7 +981,7 @@ As might be expected, we will also need some technical
 </div>
 
 <div class="doc">
-<a id="lab440"></a><h2 class="section">Reduction</h2>
+<a id="lab453"></a><h2 class="section">Reduction</h2>
 
 <div class="paragraph"> </div>
 
@@ -1389,7 +1389,7 @@ One slightly ugly point should be noted here: In the
 </div>
 
 <div class="doc">
-<a id="lab441"></a><h1 class="section">Typing</h1>
+<a id="lab454"></a><h1 class="section">Typing</h1>
 
 <div class="paragraph"> </div>
 
@@ -1402,7 +1402,7 @@ One slightly ugly point should be noted here: In the
 </div>
 
 <div class="doc">
-<a id="lab442"></a><h2 class="section">Store typings</h2>
+<a id="lab455"></a><h2 class="section">Store typings</h2>
 
 <div class="paragraph"> </div>
 
@@ -1515,7 +1515,7 @@ Naturally, the key question is, "What is the type of a location?"
 <pre>
    [\x:Nat. (!(loc 1)) x, \x:Nat. (!(loc 0)) x]
 </pre>
-<a id="lab443"></a><h4 class="section">Exercise: 3 stars, standard (cyclic_store)</h4>
+<a id="lab456"></a><h4 class="section">Exercise: 3 stars, standard (cyclic_store)</h4>
  Can you find a term whose reduction will create this particular
     cyclic store? 
 </div>
@@ -1611,7 +1611,7 @@ Suppose we are given a store typing <span class="inlinecode"><span class="id" ti
 </div>
 
 <div class="doc">
-<a id="lab444"></a><h2 class="section">The Typing Relation</h2>
+<a id="lab457"></a><h2 class="section">The Typing Relation</h2>
 
 <div class="paragraph"> </div>
 
@@ -1762,7 +1762,7 @@ Of course, these typing rules will accurately predict the results
 </div>
 
 <div class="doc">
-<a id="lab445"></a><h1 class="section">Properties</h1>
+<a id="lab458"></a><h1 class="section">Properties</h1>
 
 <div class="paragraph"> </div>
 
@@ -1776,7 +1776,7 @@ Of course, these typing rules will accurately predict the results
 </div>
 
 <div class="doc">
-<a id="lab446"></a><h2 class="section">Well-Typed Stores</h2>
+<a id="lab459"></a><h2 class="section">Well-Typed Stores</h2>
 
 <div class="paragraph"> </div>
 
@@ -1827,7 +1827,7 @@ Informally, we will write <span class="inlinecode"><span class="id" title="var">
     stores like the one we saw above. 
 <div class="paragraph"> </div>
 
-<a id="lab447"></a><h4 class="section">Exercise: 3 stars, standard (store_not_unique)</h4>
+<a id="lab460"></a><h4 class="section">Exercise: 3 stars, standard (store_not_unique)</h4>
  Can you find a store <span class="inlinecode"><span class="id" title="var">st</span></span>, and two
     different store typings <span class="inlinecode"><span class="id" title="var">ST<sub>1</sub></span></span> and <span class="inlinecode"><span class="id" title="var">ST<sub>2</sub></span></span> such that both
     <span class="inlinecode"><span class="id" title="var">ST<sub>1</sub></span></span> <span class="inlinecode"><span class="nowrap">&vert;--</span></span> <span class="inlinecode"><span class="id" title="var">st</span></span> and <span class="inlinecode"><span class="id" title="var">ST<sub>2</sub></span></span> <span class="inlinecode"><span class="nowrap">&vert;--</span></span> <span class="inlinecode"><span class="id" title="var">st</span></span>? 
@@ -1872,7 +1872,7 @@ This statement is fine for all of the reduction rules except
 </div>
 
 <div class="doc">
-<a id="lab448"></a><h2 class="section">Extending Store Typings</h2>
+<a id="lab461"></a><h2 class="section">Extending Store Typings</h2>
 
 <div class="paragraph"> </div>
 
@@ -1977,7 +1977,7 @@ Finally, <span class="inlinecode"><span class="id" title="var">ST</span></span> 
 </div>
 
 <div class="doc">
-<a id="lab449"></a><h2 class="section">Preservation, Finally</h2>
+<a id="lab462"></a><h2 class="section">Preservation, Finally</h2>
 
 <div class="paragraph"> </div>
 
@@ -2019,7 +2019,7 @@ Note that the preservation theorem merely asserts that there is
 </div>
 
 <div class="doc">
-<a id="lab450"></a><h2 class="section">Substitution Lemma</h2>
+<a id="lab463"></a><h2 class="section">Substitution Lemma</h2>
 
 <div class="paragraph"> </div>
 
@@ -2079,7 +2079,7 @@ Note that the preservation theorem merely asserts that there is
 </div>
 
 <div class="doc">
-<a id="lab451"></a><h2 class="section">Assignment Preserves Store Typing</h2>
+<a id="lab464"></a><h2 class="section">Assignment Preserves Store Typing</h2>
 
 <div class="paragraph"> </div>
 
@@ -2116,7 +2116,7 @@ Note that the preservation theorem merely asserts that there is
 </div>
 
 <div class="doc">
-<a id="lab452"></a><h2 class="section">Weakening for Stores</h2>
+<a id="lab465"></a><h2 class="section">Weakening for Stores</h2>
 
 <div class="paragraph"> </div>
 
@@ -2195,7 +2195,7 @@ We can use the <span class="inlinecode"><span class="id" title="var">store_weake
 </div>
 
 <div class="doc">
-<a id="lab453"></a><h2 class="section">Preservation!</h2>
+<a id="lab466"></a><h2 class="section">Preservation!</h2>
 
 <div class="paragraph"> </div>
 
@@ -2322,7 +2322,7 @@ And here, at last, is the preservation theorem:
 </div>
 
 <div class="doc">
-<a id="lab454"></a><h4 class="section">Exercise: 3 stars, standard (preservation_informal)</h4>
+<a id="lab467"></a><h4 class="section">Exercise: 3 stars, standard (preservation_informal)</h4>
  Write a careful informal proof of the preservation theorem,
     concentrating on the <span class="inlinecode"><span class="id" title="var">T_App</span></span>, <span class="inlinecode"><span class="id" title="var">T_Deref</span></span>, <span class="inlinecode"><span class="id" title="var">T_Assign</span></span>, and <span class="inlinecode"><span class="id" title="var">T_Ref</span></span>
     cases.
@@ -2341,7 +2341,7 @@ And here, at last, is the preservation theorem:
 
 
 <div class="doc">
-<a id="lab455"></a><h2 class="section">Progress</h2>
+<a id="lab468"></a><h2 class="section">Progress</h2>
 
 <div class="paragraph"> </div>
 
@@ -2448,7 +2448,7 @@ And here, at last, is the preservation theorem:
 </div>
 
 <div class="doc">
-<a id="lab456"></a><h1 class="section">References and Nontermination</h1>
+<a id="lab469"></a><h1 class="section">References and Nontermination</h1>
 
 <div class="paragraph"> </div>
 
@@ -2611,7 +2611,7 @@ Finally, we show that the latter expression reduces in
 </div>
 
 <div class="doc">
-<a id="lab457"></a><h4 class="section">Exercise: 4 stars, standard (factorial_ref)</h4>
+<a id="lab470"></a><h4 class="section">Exercise: 4 stars, standard (factorial_ref)</h4>
  Use the above ideas to implement a factorial function in STLC with
     references.  (There is no need to prove formally that it really
     behaves like the factorial.  Just uncomment the example below to make
@@ -2646,11 +2646,11 @@ Qed.<br/>
 
 
 <div class="doc">
-<a id="lab458"></a><h1 class="section">Additional Exercises</h1>
+<a id="lab471"></a><h1 class="section">Additional Exercises</h1>
 
 <div class="paragraph"> </div>
 
-<a id="lab459"></a><h4 class="section">Exercise: 5 stars, standard, optional (garabage_collector)</h4>
+<a id="lab472"></a><h4 class="section">Exercise: 5 stars, standard, optional (garabage_collector)</h4>
  Challenge problem: modify our formalization to include an account
     of garbage collection, and prove that it satisfies whatever nice
     properties you can think to prove about it. 
@@ -2662,7 +2662,7 @@ Qed.<br/>
 
 <span class="id" title="keyword">End</span> <a class="idref" href="References.html#STLCRef.RefsAndNontermination"><span class="id" title="module">RefsAndNontermination</span></a>.<br/>
 <span class="id" title="keyword">End</span> <a class="idref" href="References.html#STLCRef"><span class="id" title="module">STLCRef</span></a>.<br/><hr class='doublespaceincode'/>
-<span class="comment">(*&nbsp;2023-10-10&nbsp;18:01&nbsp;*)</span><br/>
+<span class="comment">(*&nbsp;2023-11-20&nbsp;17:07&nbsp;*)</span><br/>
 </div>
 </div>
 
