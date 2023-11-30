@@ -1241,7 +1241,7 @@ Consider the proof relating a small-step reduction judgment
 <div class="code">
 
 <span class="id" title="keyword">Theorem</span> <span class="id" title="var">multistep__eval</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">t</span> <span class="id" title="var">v</span>,<br/>
-&nbsp;&nbsp;<span class="id" title="var">normal_form_of</span> <span class="id" title="var">t</span> <span class="id" title="var">v</span> → <span class="id" title="tactic">∃</span> <span class="id" title="var">n</span>, <span class="id" title="var">v</span> = <span class="id" title="var">C</span> <span class="id" title="var">n</span> ∧ <span class="id" title="var">t</span> ==&gt; <span class="id" title="var">n</span>.<br/>
+&nbsp;&nbsp;<span class="id" title="var">normal_form_of</span> <span class="id" title="var">step</span> <span class="id" title="var">t</span> <span class="id" title="var">v</span> → <span class="id" title="tactic">∃</span> <span class="id" title="var">n</span>, <span class="id" title="var">v</span> = <span class="id" title="var">C</span> <span class="id" title="var">n</span> ∧ <span class="id" title="var">t</span> ==&gt; <span class="id" title="var">n</span>.<br/>
 <span class="id" title="keyword">Proof</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">t</span> <span class="id" title="var">v</span> <span class="id" title="var">Hnorm</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <span class="id" title="var">normal_form_of</span> <span class="id" title="keyword">in</span> <span class="id" title="var">Hnorm</span>.<br/>
@@ -1286,7 +1286,7 @@ Exercise: using the lemma above, simplify the proof of
 <div class="code">
 
 <span class="id" title="keyword">Theorem</span> <span class="id" title="var">multistep__eval'</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">t</span> <span class="id" title="var">v</span>,<br/>
-&nbsp;&nbsp;<span class="id" title="var">normal_form_of</span> <span class="id" title="var">t</span> <span class="id" title="var">v</span> → <span class="id" title="tactic">∃</span> <span class="id" title="var">n</span>, <span class="id" title="var">v</span> = <span class="id" title="var">C</span> <span class="id" title="var">n</span> ∧ <span class="id" title="var">t</span> ==&gt; <span class="id" title="var">n</span>.<br/>
+&nbsp;&nbsp;<span class="id" title="var">normal_form_of</span> <span class="id" title="var">step</span> <span class="id" title="var">t</span> <span class="id" title="var">v</span> → <span class="id" title="tactic">∃</span> <span class="id" title="var">n</span>, <span class="id" title="var">v</span> = <span class="id" title="var">C</span> <span class="id" title="var">n</span> ∧ <span class="id" title="var">t</span> ==&gt; <span class="id" title="var">n</span>.<br/>
 <span class="id" title="keyword">Proof</span>.<br/>
 &nbsp;&nbsp;<span class="comment">(*&nbsp;FILL&nbsp;IN&nbsp;HERE&nbsp;*)</span> <span class="id" title="var">admit</span>.<br/>
 <span class="id" title="var">Admitted</span>.<br/>
@@ -1312,7 +1312,7 @@ If we try to combine the two proofs into a single one,
 <div class="code">
 
 <span class="id" title="keyword">Theorem</span> <span class="id" title="var">multistep__eval''</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">t</span> <span class="id" title="var">v</span>,<br/>
-&nbsp;&nbsp;<span class="id" title="var">normal_form_of</span> <span class="id" title="var">t</span> <span class="id" title="var">v</span> → <span class="id" title="tactic">∃</span> <span class="id" title="var">n</span>, <span class="id" title="var">v</span> = <span class="id" title="var">C</span> <span class="id" title="var">n</span> ∧ <span class="id" title="var">t</span> ==&gt; <span class="id" title="var">n</span>.<br/>
+&nbsp;&nbsp;<span class="id" title="var">normal_form_of</span> <span class="id" title="var">step</span> <span class="id" title="var">t</span> <span class="id" title="var">v</span> → <span class="id" title="tactic">∃</span> <span class="id" title="var">n</span>, <span class="id" title="var">v</span> = <span class="id" title="var">C</span> <span class="id" title="var">n</span> ∧ <span class="id" title="var">t</span> ==&gt; <span class="id" title="var">n</span>.<br/>
 <span class="id" title="keyword">Proof</span>.<br/>
 &nbsp;&nbsp;<span class="comment">(*&nbsp;FILL&nbsp;IN&nbsp;HERE&nbsp;*)</span> <span class="id" title="var">admit</span>.<br/>
 <span class="id" title="var">Admitted</span>.<br/><hr class='doublespaceincode'/>

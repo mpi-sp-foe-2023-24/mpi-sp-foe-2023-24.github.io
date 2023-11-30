@@ -146,11 +146,11 @@
 </tr>
 </table></center><center><table class="infrule">
 <tr class="infruleassumption">
-  <td class="infrule">t<sub>1</sub> ==> v<sub>1</sub></td>
+  <td class="infrule">t<sub>1</sub> ==> n<sub>1</sub></td>
   <td></td>
 </tr>
 <tr class="infruleassumption">
-  <td class="infrule">t<sub>2</sub> ==> v<sub>2</sub></td>
+  <td class="infrule">t<sub>2</sub> ==> n<sub>2</sub></td>
   <td class="infrulenamecol" rowspan="3">
     (E_Plus) &nbsp;
   </td></tr>
@@ -158,7 +158,7 @@
   <td class="infrule"><hr /></td>
 </tr>
 <tr class="infruleassumption">
-  <td class="infrule">P t<sub>1</sub> t<sub>2</sub> ==> v<sub>1</sub> + v<sub>2</sub></td>
+  <td class="infrule">P t<sub>1</sub> t<sub>2</sub> ==> n<sub>1</sub> + n<sub>2</sub></td>
   <td></td>
 </tr>
 </table></center>
@@ -168,10 +168,10 @@
 <span class="id" title="keyword">Inductive</span> <span class="id" title="tactic">eval</span> : <span class="id" title="var">tm</span> → <span class="id" title="var">nat</span> → <span class="id" title="keyword">Prop</span> :=<br/>
 &nbsp;&nbsp;| <span class="id" title="var">E_Const</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">n</span>,<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">C</span> <span class="id" title="var">n</span> ==&gt; <span class="id" title="var">n</span><br/>
-&nbsp;&nbsp;| <span class="id" title="var">E_Plus</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">t<sub>1</sub></span> <span class="id" title="var">t<sub>2</sub></span> <span class="id" title="var">v<sub>1</sub></span> <span class="id" title="var">v<sub>2</sub></span>,<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">t<sub>1</sub></span> ==&gt; <span class="id" title="var">v<sub>1</sub></span> →<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">t<sub>2</sub></span> ==&gt; <span class="id" title="var">v<sub>2</sub></span> →<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> <span class="id" title="var">t<sub>1</sub></span> <span class="id" title="var">t<sub>2</sub></span> ==&gt; (<span class="id" title="var">v<sub>1</sub></span> + <span class="id" title="var">v<sub>2</sub></span>)<br/>
+&nbsp;&nbsp;| <span class="id" title="var">E_Plus</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">t<sub>1</sub></span> <span class="id" title="var">t<sub>2</sub></span> <span class="id" title="var">n<sub>1</sub></span> <span class="id" title="var">n<sub>2</sub></span>,<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">t<sub>1</sub></span> ==&gt; <span class="id" title="var">n<sub>1</sub></span> →<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">t<sub>2</sub></span> ==&gt; <span class="id" title="var">n<sub>2</sub></span> →<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> <span class="id" title="var">t<sub>1</sub></span> <span class="id" title="var">t<sub>2</sub></span> ==&gt; (<span class="id" title="var">n<sub>1</sub></span> + <span class="id" title="var">n<sub>2</sub></span>)<br/>
 <br/><hr class='doublespaceincode'/>
 </div>
 
@@ -187,7 +187,7 @@
   <td class="infrule"><hr /></td>
 </tr>
 <tr class="infruleassumption">
-  <td class="infrule">P (C v<sub>1</sub>) (C v<sub>2</sub>) <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> C (v<sub>1</sub> + v<sub>2</sub>)</td>
+  <td class="infrule">P (C n<sub>1</sub>) (C n<sub>2</sub>) <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> C (n<sub>1</sub> + n<sub>2</sub>)</td>
   <td></td>
 </tr>
 </table></center><center><table class="infrule">
@@ -213,7 +213,7 @@
   <td class="infrule"><hr /></td>
 </tr>
 <tr class="infruleassumption">
-  <td class="infrule">P (C v<sub>1</sub>) t<sub>2</sub> <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> P (C v<sub>1</sub>) t<sub>2</sub>'</td>
+  <td class="infrule">P (C n<sub>1</sub>) t<sub>2</sub> <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> P (C n<sub>1</sub>) t<sub>2</sub>'</td>
   <td></td>
 </tr>
 </table></center> Notice:
@@ -252,14 +252,14 @@
 <div class="code">
 <hr class='doublespaceincode'/>
 <span class="id" title="keyword">Inductive</span> <span class="id" title="var">step</span> : <span class="id" title="var">tm</span> → <span class="id" title="var">tm</span> → <span class="id" title="keyword">Prop</span> :=<br/>
-&nbsp;&nbsp;| <span class="id" title="var">ST_PlusConstConst</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">v<sub>1</sub></span> <span class="id" title="var">v<sub>2</sub></span>,<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> (<span class="id" title="var">C</span> <span class="id" title="var">v<sub>1</sub></span>) (<span class="id" title="var">C</span> <span class="id" title="var">v<sub>2</sub></span>) <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">C</span> (<span class="id" title="var">v<sub>1</sub></span> + <span class="id" title="var">v<sub>2</sub></span>)<br/>
+&nbsp;&nbsp;| <span class="id" title="var">ST_PlusConstConst</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">n<sub>1</sub></span> <span class="id" title="var">n<sub>2</sub></span>,<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> (<span class="id" title="var">C</span> <span class="id" title="var">n<sub>1</sub></span>) (<span class="id" title="var">C</span> <span class="id" title="var">n<sub>2</sub></span>) <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">C</span> (<span class="id" title="var">n<sub>1</sub></span> + <span class="id" title="var">n<sub>2</sub></span>)<br/>
 &nbsp;&nbsp;| <span class="id" title="var">ST_Plus1</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">t<sub>1</sub></span> <span class="id" title="var">t<sub>1</sub>'</span> <span class="id" title="var">t<sub>2</sub></span>,<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">t<sub>1</sub></span> <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">t<sub>1</sub>'</span> →<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> <span class="id" title="var">t<sub>1</sub></span> <span class="id" title="var">t<sub>2</sub></span> <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">P</span> <span class="id" title="var">t<sub>1</sub>'</span> <span class="id" title="var">t<sub>2</sub></span><br/>
-&nbsp;&nbsp;| <span class="id" title="var">ST_Plus2</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">v<sub>1</sub></span> <span class="id" title="var">t<sub>2</sub></span> <span class="id" title="var">t<sub>2</sub>'</span>,<br/>
+&nbsp;&nbsp;| <span class="id" title="var">ST_Plus2</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">n<sub>1</sub></span> <span class="id" title="var">t<sub>2</sub></span> <span class="id" title="var">t<sub>2</sub>'</span>,<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">t<sub>2</sub></span> <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">t<sub>2</sub>'</span> →<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> (<span class="id" title="var">C</span> <span class="id" title="var">v<sub>1</sub></span>) <span class="id" title="var">t<sub>2</sub></span> <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">P</span> (<span class="id" title="var">C</span> <span class="id" title="var">v<sub>1</sub></span>) <span class="id" title="var">t<sub>2</sub>'</span><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> (<span class="id" title="var">C</span> <span class="id" title="var">n<sub>1</sub></span>) <span class="id" title="var">t<sub>2</sub></span> <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">P</span> (<span class="id" title="var">C</span> <span class="id" title="var">n<sub>1</sub></span>) <span class="id" title="var">t<sub>2</sub>'</span><br/>
 <br/>
 </div>
 
@@ -293,7 +293,7 @@
 
 
 <div class="doc">
-What does the following term step to?
+To what does the following term step?
 
 <div class="paragraph"> </div>
 
@@ -322,14 +322,14 @@ What does the following term step to?
 <br/>
 <span class="inlinecode"><span class="id" title="var">_________________________________________________</span><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Inductive</span> <span class="id" title="var">step</span> : <span class="id" title="var">tm</span> → <span class="id" title="var">tm</span> → <span class="id" title="keyword">Prop</span> :=<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <span class="id" title="var">ST_PlusConstConst</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">v<sub>1</sub></span> <span class="id" title="var">v<sub>2</sub></span>,<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> (<span class="id" title="var">C</span> <span class="id" title="var">v<sub>1</sub></span>) (<span class="id" title="var">C</span> <span class="id" title="var">v<sub>2</sub></span>) <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">C</span> (<span class="id" title="var">v<sub>1</sub></span> + <span class="id" title="var">v<sub>2</sub></span>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <span class="id" title="var">ST_PlusConstConst</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">n<sub>1</sub></span> <span class="id" title="var">n<sub>2</sub></span>,<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> (<span class="id" title="var">C</span> <span class="id" title="var">n<sub>1</sub></span>) (<span class="id" title="var">C</span> <span class="id" title="var">n<sub>2</sub></span>) <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">C</span> (<span class="id" title="var">n<sub>1</sub></span> + <span class="id" title="var">n<sub>2</sub></span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <span class="id" title="var">ST_Plus1</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">t<sub>1</sub></span> <span class="id" title="var">t<sub>1</sub>'</span> <span class="id" title="var">t<sub>2</sub></span>,<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">t<sub>1</sub></span> <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">t<sub>1</sub>'</span> →<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> <span class="id" title="var">t<sub>1</sub></span> <span class="id" title="var">t<sub>2</sub></span> <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">P</span> <span class="id" title="var">t<sub>1</sub>'</span> <span class="id" title="var">t<sub>2</sub></span><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <span class="id" title="var">ST_Plus2</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">v<sub>1</sub></span> <span class="id" title="var">t<sub>2</sub></span> <span class="id" title="var">t<sub>2</sub>'</span>,<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <span class="id" title="var">ST_Plus2</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">n<sub>1</sub></span> <span class="id" title="var">t<sub>2</sub></span> <span class="id" title="var">t<sub>2</sub>'</span>,<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">t<sub>2</sub></span> <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">t<sub>2</sub>'</span> →<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> (<span class="id" title="var">C</span> <span class="id" title="var">v<sub>1</sub></span>) <span class="id" title="var">t<sub>2</sub></span> <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">P</span> (<span class="id" title="var">C</span> <span class="id" title="var">v<sub>1</sub></span>) <span class="id" title="var">t<sub>2</sub>'</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> (<span class="id" title="var">C</span> <span class="id" title="var">n<sub>1</sub></span>) <span class="id" title="var">t<sub>2</sub></span> <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">P</span> (<span class="id" title="var">C</span> <span class="id" title="var">n<sub>1</sub></span>) <span class="id" title="var">t<sub>2</sub>'</span>
 </span>
 </div>
 </div> <!-- /quiz -->
@@ -358,14 +358,14 @@ What about this one?
 <br/>
 <span class="inlinecode"><span class="id" title="var">_________________________________________________</span><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Inductive</span> <span class="id" title="var">step</span> : <span class="id" title="var">tm</span> → <span class="id" title="var">tm</span> → <span class="id" title="keyword">Prop</span> :=<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <span class="id" title="var">ST_PlusConstConst</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">v<sub>1</sub></span> <span class="id" title="var">v<sub>2</sub></span>,<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> (<span class="id" title="var">C</span> <span class="id" title="var">v<sub>1</sub></span>) (<span class="id" title="var">C</span> <span class="id" title="var">v<sub>2</sub></span>) <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">C</span> (<span class="id" title="var">v<sub>1</sub></span> + <span class="id" title="var">v<sub>2</sub></span>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <span class="id" title="var">ST_PlusConstConst</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">n<sub>1</sub></span> <span class="id" title="var">n<sub>2</sub></span>,<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> (<span class="id" title="var">C</span> <span class="id" title="var">n<sub>1</sub></span>) (<span class="id" title="var">C</span> <span class="id" title="var">n<sub>2</sub></span>) <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">C</span> (<span class="id" title="var">n<sub>1</sub></span> + <span class="id" title="var">n<sub>2</sub></span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <span class="id" title="var">ST_Plus1</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">t<sub>1</sub></span> <span class="id" title="var">t<sub>1</sub>'</span> <span class="id" title="var">t<sub>2</sub></span>,<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">t<sub>1</sub></span> <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">t<sub>1</sub>'</span> →<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> <span class="id" title="var">t<sub>1</sub></span> <span class="id" title="var">t<sub>2</sub></span> <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">P</span> <span class="id" title="var">t<sub>1</sub>'</span> <span class="id" title="var">t<sub>2</sub></span><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <span class="id" title="var">ST_Plus2</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">v<sub>1</sub></span> <span class="id" title="var">t<sub>2</sub></span> <span class="id" title="var">t<sub>2</sub>'</span>,<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <span class="id" title="var">ST_Plus2</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">n<sub>1</sub></span> <span class="id" title="var">t<sub>2</sub></span> <span class="id" title="var">t<sub>2</sub>'</span>,<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">t<sub>2</sub></span> <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">t<sub>2</sub>'</span> →<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> (<span class="id" title="var">C</span> <span class="id" title="var">v<sub>1</sub></span>) <span class="id" title="var">t<sub>2</sub></span> <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">P</span> (<span class="id" title="var">C</span> <span class="id" title="var">v<sub>1</sub></span>) <span class="id" title="var">t<sub>2</sub>'</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> (<span class="id" title="var">C</span> <span class="id" title="var">n<sub>1</sub></span>) <span class="id" title="var">t<sub>2</sub></span> <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">P</span> (<span class="id" title="var">C</span> <span class="id" title="var">n<sub>1</sub></span>) <span class="id" title="var">t<sub>2</sub>'</span>
 </span>
 </div>
 </div> <!-- /quiz -->
@@ -419,7 +419,7 @@ The step relation <span class="inlinecode"><span class="nowrap"><span style='fon
 </div>
 <div class="code">
 <span class="id" title="keyword">Proof</span>.<br/>
-&nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <span class="id" title="var">deterministic</span>. <span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y<sub>1</sub></span> <span class="id" title="var">y<sub>2</sub></span> <span class="id" title="var">Hy<sub>1</sub></span> <span class="id" title="var">Hy<sub>2</sub></span>.<br/>
+&nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <span class="id" title="var">deterministic</span>. <span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y<sub>1</sub></span> <span class="id" title="var">y<sub>2</sub></span> <span class="id" title="var">Hy<sub>1</sub></span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">generalize</span> <span class="id" title="tactic">dependent</span> <span class="id" title="var">y<sub>2</sub></span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">induction</span> <span class="id" title="var">Hy<sub>1</sub></span>; <span class="id" title="tactic">intros</span> <span class="id" title="var">y<sub>2</sub></span> <span class="id" title="var">Hy<sub>2</sub></span>.<br/>
 &nbsp;&nbsp;- <span class="comment">(*&nbsp;ST_PlusConstConst&nbsp;*)</span> <span class="id" title="tactic">inversion</span> <span class="id" title="var">Hy<sub>2</sub></span>; <span class="id" title="tactic">subst</span>.<br/>
@@ -468,7 +468,7 @@ The step relation <span class="inlinecode"><span class="nowrap"><span style='fon
 <hr class='doublespaceincode'/>
 <span class="id" title="keyword">Theorem</span> <span class="id" title="var">step_deterministic_alt</span>: <span class="id" title="var">deterministic</span> <span class="id" title="var">step</span>.<br/>
 <span class="id" title="keyword">Proof</span>.<br/>
-&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y<sub>1</sub></span> <span class="id" title="var">y<sub>2</sub></span> <span class="id" title="var">Hy<sub>1</sub></span> <span class="id" title="var">Hy<sub>2</sub></span>.<br/>
+&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y<sub>1</sub></span> <span class="id" title="var">y<sub>2</sub></span> <span class="id" title="var">Hy<sub>1</sub></span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">generalize</span> <span class="id" title="tactic">dependent</span> <span class="id" title="var">y<sub>2</sub></span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">induction</span> <span class="id" title="var">Hy<sub>1</sub></span>; <span class="id" title="tactic">intros</span> <span class="id" title="var">y<sub>2</sub></span> <span class="id" title="var">Hy<sub>2</sub></span>;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">inversion</span> <span class="id" title="var">Hy<sub>2</sub></span>; <span class="id" title="tactic">subst</span>; <span class="id" title="tactic">try</span> <span class="id" title="var">solve_by_invert</span>.<br/>
@@ -539,7 +539,7 @@ The step relation <span class="inlinecode"><span class="nowrap"><span style='fon
 <div class="paragraph"> </div>
 
 <a id="lab242"></a><h3 class="section"> </h3>
- Final states of the machine are terms of the form
+ Final states of our machine are terms of the form
     <span class="inlinecode"><span class="id" title="var">C</span></span> <span class="inlinecode"><span class="id" title="var">n</span></span> for some <span class="inlinecode"><span class="id" title="var">n</span></span>.  We call such terms <i>values</i>. 
 </div>
 <div class="code">
@@ -563,7 +563,7 @@ The step relation <span class="inlinecode"><span class="nowrap"><span style='fon
   <td class="infrule"><hr /></td>
 </tr>
 <tr class="infruleassumption">
-  <td class="infrule">P (C v<sub>1</sub>) (C v<sub>2</sub>) <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> C (v<sub>1</sub> + v<sub>2</sub>)</td>
+  <td class="infrule">P (C n<sub>1</sub>) (C n<sub>2</sub>) <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> C (n<sub>1</sub> + n<sub>2</sub>)</td>
   <td></td>
 </tr>
 </table></center><center><table class="infrule">
@@ -624,9 +624,9 @@ The step relation <span class="inlinecode"><span class="nowrap"><span style='fon
 <div class="code">
 <hr class='doublespaceincode'/>
 <span class="id" title="keyword">Inductive</span> <span class="id" title="var">step</span> : <span class="id" title="var">tm</span> → <span class="id" title="var">tm</span> → <span class="id" title="keyword">Prop</span> :=<br/>
-&nbsp;&nbsp;| <span class="id" title="var">ST_PlusConstConst</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">v<sub>1</sub></span> <span class="id" title="var">v<sub>2</sub></span>,<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> (<span class="id" title="var">C</span> <span class="id" title="var">v<sub>1</sub></span>) (<span class="id" title="var">C</span> <span class="id" title="var">v<sub>2</sub></span>)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">C</span> (<span class="id" title="var">v<sub>1</sub></span> + <span class="id" title="var">v<sub>2</sub></span>)<br/>
+&nbsp;&nbsp;| <span class="id" title="var">ST_PlusConstConst</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">n<sub>1</sub></span> <span class="id" title="var">n<sub>2</sub></span>,<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> (<span class="id" title="var">C</span> <span class="id" title="var">n<sub>1</sub></span>) (<span class="id" title="var">C</span> <span class="id" title="var">n<sub>2</sub></span>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">C</span> (<span class="id" title="var">n<sub>1</sub></span> + <span class="id" title="var">n<sub>2</sub></span>)<br/>
 &nbsp;&nbsp;| <span class="id" title="var">ST_Plus1</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">t<sub>1</sub></span> <span class="id" title="var">t<sub>1</sub>'</span> <span class="id" title="var">t<sub>2</sub></span>,<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">t<sub>1</sub></span> <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">t<sub>1</sub>'</span> →<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> <span class="id" title="var">t<sub>1</sub></span> <span class="id" title="var">t<sub>2</sub></span> <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">P</span> <span class="id" title="var">t<sub>1</sub>'</span> <span class="id" title="var">t<sub>2</sub></span><br/>
@@ -758,15 +758,15 @@ Why is this interesting?
 <hr class='doublespaceincode'/>
 <span class="id" title="keyword">Inductive</span> <span class="id" title="var">value</span> : <span class="id" title="var">tm</span> → <span class="id" title="keyword">Prop</span> :=<br/>
 &nbsp;&nbsp;| <span class="id" title="var">v_const</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">n</span>, <span class="id" title="var">value</span> (<span class="id" title="var">C</span> <span class="id" title="var">n</span>)<br/>
-&nbsp;&nbsp;| <span class="id" title="var">v_funny</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">t<sub>1</sub></span> <span class="id" title="var">v<sub>2</sub></span>,<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">value</span> (<span class="id" title="var">P</span> <span class="id" title="var">t<sub>1</sub></span> (<span class="id" title="var">C</span> <span class="id" title="var">v<sub>2</sub></span>)). <span class="comment">(*&nbsp;&lt;---&nbsp;*)</span><br/><hr class='doublespaceincode'/>
+&nbsp;&nbsp;| <span class="id" title="var">v_funny</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">t<sub>1</sub></span> <span class="id" title="var">n<sub>2</sub></span>,<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">value</span> (<span class="id" title="var">P</span> <span class="id" title="var">t<sub>1</sub></span> (<span class="id" title="var">C</span> <span class="id" title="var">n<sub>2</sub></span>)). <span class="comment">(*&nbsp;&lt;---&nbsp;*)</span><br/><hr class='doublespaceincode'/>
  <!-- /quiz -->
 </div><div class="quiz">
 
 
 <div class="doc">
-Using this wrong definition of <span class="inlinecode"><span class="id" title="var">value</span></span>, how many different values
-    does the following term <span class="inlinecode"><span class="id" title="var">step</span></span> to (in zero or more steps)?
+Using this wrong definition of <span class="inlinecode"><span class="id" title="var">value</span></span>, to how many different values
+    does the following term reduce in zero or more steps?
 <br/>
 <span class="inlinecode">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="var">P</span> (<span class="id" title="var">C</span> 1) (<span class="id" title="var">C</span> 2))<br/>
@@ -775,8 +775,8 @@ Using this wrong definition of <span class="inlinecode"><span class="id" title="
 &nbsp;&nbsp;<span class="id" title="var">________________________________________</span><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Inductive</span> <span class="id" title="var">value</span> : <span class="id" title="var">tm</span> → <span class="id" title="keyword">Prop</span> :=<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <span class="id" title="var">v_const</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">n</span>, <span class="id" title="var">value</span> (<span class="id" title="var">C</span> <span class="id" title="var">n</span>)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <span class="id" title="var">v_funny</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">t<sub>1</sub></span> <span class="id" title="var">v<sub>2</sub></span>,<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">value</span> (<span class="id" title="var">P</span> <span class="id" title="var">t<sub>1</sub></span> (<span class="id" title="var">C</span> <span class="id" title="var">v<sub>2</sub></span>)).
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <span class="id" title="var">v_funny</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">t<sub>1</sub></span> <span class="id" title="var">n<sub>2</sub></span>,<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">value</span> (<span class="id" title="var">P</span> <span class="id" title="var">t<sub>1</sub></span> (<span class="id" title="var">C</span> <span class="id" title="var">n<sub>2</sub></span>)).
 </span>
 <div class="paragraph"> </div>
 
@@ -787,16 +787,16 @@ Using this wrong definition of <span class="inlinecode"><span class="id" title="
 
 
 <div class="doc">
-How many different terms does the following term <span class="inlinecode"><span class="id" title="var">step</span></span> to
-    in one step?
+To how many different terms does the following term <span class="inlinecode"><span class="id" title="var">step</span></span>
+    (in one step)?
 <br/>
 <span class="inlinecode">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> (<span class="id" title="var">P</span> (<span class="id" title="var">C</span> 1) (<span class="id" title="var">C</span> 2)) (<span class="id" title="var">P</span> (<span class="id" title="var">C</span> 3) (<span class="id" title="var">C</span> 4))<br/>
 <br/>
 &nbsp;&nbsp;<span class="id" title="var">________________________________________</span><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Inductive</span> <span class="id" title="var">value</span> : <span class="id" title="var">tm</span> → <span class="id" title="keyword">Prop</span> :=<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <span class="id" title="var">v_const</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">n</span>, <span class="id" title="var">value</span> (<span class="id" title="var">C</span> <span class="id" title="var">n</span>)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <span class="id" title="var">v_funny</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">t<sub>1</sub></span> <span class="id" title="var">v<sub>2</sub></span>,<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">value</span> (<span class="id" title="var">P</span> <span class="id" title="var">t<sub>1</sub></span> (<span class="id" title="var">C</span> <span class="id" title="var">v<sub>2</sub></span>)).
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <span class="id" title="var">v_funny</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">t<sub>1</sub></span> <span class="id" title="var">n<sub>2</sub></span>,<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">value</span> (<span class="id" title="var">P</span> <span class="id" title="var">t<sub>1</sub></span> (<span class="id" title="var">C</span> <span class="id" title="var">n<sub>2</sub></span>)).
 </span>
 </div>
 </div> <!-- /quiz -->
@@ -831,8 +831,8 @@ How many different terms does the following term <span class="inlinecode"><span 
 <span class="id" title="keyword">Inductive</span> <span class="id" title="var">step</span> : <span class="id" title="var">tm</span> → <span class="id" title="var">tm</span> → <span class="id" title="keyword">Prop</span> :=<br/>
 &nbsp;&nbsp;| <span class="id" title="var">ST_Funny</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">n</span>,<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">C</span> <span class="id" title="var">n</span> <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">P</span> (<span class="id" title="var">C</span> <span class="id" title="var">n</span>) (<span class="id" title="var">C</span> 0)                  <span class="comment">(*&nbsp;&lt;---&nbsp;NEW&nbsp;*)</span><br/>
-&nbsp;&nbsp;| <span class="id" title="var">ST_PlusConstConst</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">v<sub>1</sub></span> <span class="id" title="var">v<sub>2</sub></span>,<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> (<span class="id" title="var">C</span> <span class="id" title="var">v<sub>1</sub></span>) (<span class="id" title="var">C</span> <span class="id" title="var">v<sub>2</sub></span>) <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">C</span> (<span class="id" title="var">v<sub>1</sub></span> + <span class="id" title="var">v<sub>2</sub></span>)<br/>
+&nbsp;&nbsp;| <span class="id" title="var">ST_PlusConstConst</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">n<sub>1</sub></span> <span class="id" title="var">n<sub>2</sub></span>,<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> (<span class="id" title="var">C</span> <span class="id" title="var">n<sub>1</sub></span>) (<span class="id" title="var">C</span> <span class="id" title="var">n<sub>2</sub></span>) <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">C</span> (<span class="id" title="var">n<sub>1</sub></span> + <span class="id" title="var">n<sub>2</sub></span>)<br/>
 &nbsp;&nbsp;| <span class="id" title="var">ST_Plus1</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">t<sub>1</sub></span> <span class="id" title="var">t<sub>1</sub>'</span> <span class="id" title="var">t<sub>2</sub></span>,<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">t<sub>1</sub></span> <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">t<sub>1</sub>'</span> →<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> <span class="id" title="var">t<sub>1</sub></span> <span class="id" title="var">t<sub>2</sub></span> <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">P</span> <span class="id" title="var">t<sub>1</sub>'</span> <span class="id" title="var">t<sub>2</sub></span><br/>
@@ -846,8 +846,8 @@ How many different terms does the following term <span class="inlinecode"><span 
 
 
 <div class="doc">
-How many different terms does the following term step to (in
-    exactly one step)?
+To how many different terms does the following term step
+    (in exactly one step)?
 <br/>
 <span class="inlinecode">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> (<span class="id" title="var">C</span> 1) (<span class="id" title="var">C</span> 3)<br/>
 <br/>
@@ -855,8 +855,8 @@ How many different terms does the following term step to (in
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Inductive</span> <span class="id" title="var">step</span> : <span class="id" title="var">tm</span> → <span class="id" title="var">tm</span> → <span class="id" title="keyword">Prop</span> :=<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <span class="id" title="var">ST_Funny</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">n</span>,<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">C</span> <span class="id" title="var">n</span> <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">P</span> (<span class="id" title="var">C</span> <span class="id" title="var">n</span>) (<span class="id" title="var">C</span> 0)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <span class="id" title="var">ST_PlusConstConst</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">v<sub>1</sub></span> <span class="id" title="var">v<sub>2</sub></span>,<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> (<span class="id" title="var">C</span> <span class="id" title="var">v<sub>1</sub></span>) (<span class="id" title="var">C</span> <span class="id" title="var">v<sub>2</sub></span>) <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">C</span> (<span class="id" title="var">v<sub>1</sub></span> + <span class="id" title="var">v<sub>2</sub></span>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <span class="id" title="var">ST_PlusConstConst</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">n<sub>1</sub></span> <span class="id" title="var">n<sub>2</sub></span>,<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> (<span class="id" title="var">C</span> <span class="id" title="var">n<sub>1</sub></span>) (<span class="id" title="var">C</span> <span class="id" title="var">n<sub>2</sub></span>) <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">C</span> (<span class="id" title="var">n<sub>1</sub></span> + <span class="id" title="var">n<sub>2</sub></span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <span class="id" title="var">ST_Plus1</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">t<sub>1</sub></span> <span class="id" title="var">t<sub>1</sub>'</span> <span class="id" title="var">t<sub>2</sub></span>,<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">t<sub>1</sub></span> <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">t<sub>1</sub>'</span> →<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> <span class="id" title="var">t<sub>1</sub></span> <span class="id" title="var">t<sub>2</sub></span> <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">P</span> <span class="id" title="var">t<sub>1</sub>'</span> <span class="id" title="var">t<sub>2</sub></span><br/>
@@ -900,8 +900,8 @@ How many different terms does the following term step to (in
 
 <br/>
 <span class="id" title="keyword">Inductive</span> <span class="id" title="var">step</span> : <span class="id" title="var">tm</span> → <span class="id" title="var">tm</span> → <span class="id" title="keyword">Prop</span> :=<br/>
-&nbsp;&nbsp;| <span class="id" title="var">ST_PlusConstConst</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">v<sub>1</sub></span> <span class="id" title="var">v<sub>2</sub></span>,<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> (<span class="id" title="var">C</span> <span class="id" title="var">v<sub>1</sub></span>) (<span class="id" title="var">C</span> <span class="id" title="var">v<sub>2</sub></span>) <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">C</span> (<span class="id" title="var">v<sub>1</sub></span> + <span class="id" title="var">v<sub>2</sub></span>)<br/>
+&nbsp;&nbsp;| <span class="id" title="var">ST_PlusConstConst</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">n<sub>1</sub></span> <span class="id" title="var">n<sub>2</sub></span>,<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> (<span class="id" title="var">C</span> <span class="id" title="var">n<sub>1</sub></span>) (<span class="id" title="var">C</span> <span class="id" title="var">n<sub>2</sub></span>) <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">C</span> (<span class="id" title="var">n<sub>1</sub></span> + <span class="id" title="var">n<sub>2</sub></span>)<br/>
 &nbsp;&nbsp;| <span class="id" title="var">ST_Plus1</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">t<sub>1</sub></span> <span class="id" title="var">t<sub>1</sub>'</span> <span class="id" title="var">t<sub>2</sub></span>,<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">t<sub>1</sub></span> <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">t<sub>1</sub>'</span> →<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> <span class="id" title="var">t<sub>1</sub></span> <span class="id" title="var">t<sub>2</sub></span> <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">P</span> <span class="id" title="var">t<sub>1</sub>'</span> <span class="id" title="var">t<sub>2</sub></span><br/>
@@ -915,7 +915,7 @@ How many different terms does the following term step to (in
 
 
 <div class="doc">
-How many terms does the following term step to (in one step)?
+To how many terms does the following term step (in one step)?
 
 <div class="paragraph"> </div>
 
@@ -924,8 +924,8 @@ How many terms does the following term step to (in one step)?
 <br/>
 &nbsp;&nbsp;<span class="id" title="var">_________________________________________</span><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Inductive</span> <span class="id" title="var">step</span> : <span class="id" title="var">tm</span> → <span class="id" title="var">tm</span> → <span class="id" title="keyword">Prop</span> :=<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <span class="id" title="var">ST_PlusConstConst</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">v<sub>1</sub></span> <span class="id" title="var">v<sub>2</sub></span>,<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> (<span class="id" title="var">C</span> <span class="id" title="var">v<sub>1</sub></span>) (<span class="id" title="var">C</span> <span class="id" title="var">v<sub>2</sub></span>) <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">C</span> (<span class="id" title="var">v<sub>1</sub></span> + <span class="id" title="var">v<sub>2</sub></span>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <span class="id" title="var">ST_PlusConstConst</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">n<sub>1</sub></span> <span class="id" title="var">n<sub>2</sub></span>,<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> (<span class="id" title="var">C</span> <span class="id" title="var">n<sub>1</sub></span>) (<span class="id" title="var">C</span> <span class="id" title="var">n<sub>2</sub></span>) <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">C</span> (<span class="id" title="var">n<sub>1</sub></span> + <span class="id" title="var">n<sub>2</sub></span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <span class="id" title="var">ST_Plus1</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">t<sub>1</sub></span> <span class="id" title="var">t<sub>1</sub>'</span> <span class="id" title="var">t<sub>2</sub></span>,<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">t<sub>1</sub></span> <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">t<sub>1</sub>'</span> →<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> <span class="id" title="var">t<sub>1</sub></span> <span class="id" title="var">t<sub>2</sub></span> <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">P</span> <span class="id" title="var">t<sub>1</sub>'</span> <span class="id" title="var">t<sub>2</sub></span>
@@ -975,10 +975,6 @@ How many terms does the following term step to (in one step)?
     Given a relation <span class="inlinecode"><span class="id" title="var">R</span></span> (e.g., the step relation <span class="inlinecode"><span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span></span>), we define a
     relation <span class="inlinecode"><span class="id" title="var">multi</span></span> <span class="inlinecode"><span class="id" title="var">R</span></span>, called the <i>multi-step closure of <span class="inlinecode"><span class="id" title="var">R</span></span></i> as
     follows. 
-<div class="paragraph"> </div>
-
-<a id="lab257"></a><h3 class="section"> </h3>
-
 </div>
 <div class="code">
 
@@ -991,7 +987,7 @@ How many terms does the following term step to (in one step)?
 </div>
 
 <div class="doc">
-<a id="lab258"></a><h3 class="section"> </h3>
+<a id="lab257"></a><h3 class="section"> </h3>
  The effect of this definition is that <span class="inlinecode"><span class="id" title="var">multi</span></span> <span class="inlinecode"><span class="id" title="var">R</span></span> relates two
     elements <span class="inlinecode"><span class="id" title="var">x</span></span> and <span class="inlinecode"><span class="id" title="var">y</span></span> if
 
@@ -1018,7 +1014,7 @@ How many terms does the following term step to (in one step)?
     us from <span class="inlinecode"><span class="id" title="var">x</span></span> to <span class="inlinecode"><span class="id" title="var">y</span></span>. 
 <div class="paragraph"> </div>
 
-<a id="lab259"></a><h3 class="section"> </h3>
+<a id="lab258"></a><h3 class="section"> </h3>
  We write <span class="inlinecode"><span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span><span style='letter-spacing:-.2em;'>&gt;</span><span style='vertical-align:15%;'>*</span></span></span></span> for the <span class="inlinecode"><span class="id" title="var">multi</span></span> <span class="inlinecode"><span class="id" title="var">step</span></span> relation on terms. 
 </div>
 <div class="code">
@@ -1027,7 +1023,7 @@ How many terms does the following term step to (in one step)?
 </div>
 
 <div class="doc">
-<a id="lab260"></a><h3 class="section"> </h3>
+<a id="lab259"></a><h3 class="section"> </h3>
  The relation <span class="inlinecode"><span class="id" title="var">multi</span></span> <span class="inlinecode"><span class="id" title="var">R</span></span> has several crucial properties.
 
 <div class="paragraph"> </div>
@@ -1038,7 +1034,7 @@ How many terms does the following term step to (in one step)?
     steps of execution. 
 <div class="paragraph"> </div>
 
-<a id="lab261"></a><h3 class="section"> </h3>
+<a id="lab260"></a><h3 class="section"> </h3>
  Second, it contains <span class="inlinecode"><span class="id" title="var">R</span></span> -- that is, single-step executions are a
     particular case of multi-step executions.  (It is this fact that
     justifies the word "closure" in the term "multi-step closure of
@@ -1060,7 +1056,7 @@ How many terms does the following term step to (in one step)?
 </div>
 
 <div class="doc">
-<a id="lab262"></a><h3 class="section"> </h3>
+<a id="lab261"></a><h3 class="section"> </h3>
 
 <div class="paragraph"> </div>
 
@@ -1093,7 +1089,7 @@ In particular, for the <span class="inlinecode"><span class="id" title="var">mul
 </div>
 
 <div class="doc">
-<a id="lab263"></a><h2 class="section">Examples</h2>
+<a id="lab262"></a><h2 class="section">Examples</h2>
 
 <div class="paragraph"> </div>
 
@@ -1127,7 +1123,7 @@ In particular, for the <span class="inlinecode"><span class="id" title="var">mul
 </div>
 
 <div class="doc">
-<a id="lab264"></a><h2 class="section">Normal Forms Again</h2>
+<a id="lab263"></a><h2 class="section">Normal Forms Again</h2>
 
 <div class="paragraph"> </div>
 
@@ -1136,13 +1132,12 @@ In particular, for the <span class="inlinecode"><span class="id" title="var">mul
 </div>
 <div class="code">
 
-<span class="id" title="keyword">Definition</span> <span class="id" title="var">step_normal_form</span> := <span class="id" title="var">normal_form</span> <span class="id" title="var">step</span>.<br/><hr class='doublespaceincode'/>
-<span class="id" title="keyword">Definition</span> <span class="id" title="var">normal_form_of</span> (<span class="id" title="var">t</span> <span class="id" title="var">t'</span> : <span class="id" title="var">tm</span>) :=<br/>
-&nbsp;&nbsp;(<span class="id" title="var">t</span> <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span><span style='letter-spacing:-.2em;'>&gt;</span><span style='vertical-align:15%;'>*</span></span></span> <span class="id" title="var">t'</span> ∧ <span class="id" title="var">step_normal_form</span> <span class="id" title="var">t'</span>).<br/>
+<span class="id" title="keyword">Definition</span> <span class="id" title="var">normal_form_of</span> {<span class="id" title="var">X</span> : <span class="id" title="keyword">Type</span>} (<span class="id" title="var">R</span> : <span class="id" title="var">relation</span> <span class="id" title="var">X</span>)  (<span class="id" title="var">t</span> <span class="id" title="var">t'</span> : <span class="id" title="var">X</span>) :=<br/>
+&nbsp;&nbsp;((<span class="id" title="var">multi</span> <span class="id" title="var">R</span>) <span class="id" title="var">t</span> <span class="id" title="var">t'</span> ∧ <span class="id" title="var">normal_form</span> <span class="id" title="var">R</span> <span class="id" title="var">t'</span>).<br/>
 </div>
 
 <div class="doc">
-<a id="lab265"></a><h3 class="section"> </h3>
+<a id="lab264"></a><h3 class="section"> </h3>
  Notice:
 
 <div class="paragraph"> </div>
@@ -1167,6 +1162,28 @@ In particular, for the <span class="inlinecode"><span class="id" title="var">mul
 
 <div class="paragraph"> </div>
 
+<a id="lab265"></a><h4 class="section">Exercise: 3 stars, standard, optional (normal_forms_unique)</h4>
+
+</div>
+<div class="code">
+<span class="id" title="keyword">Theorem</span> <span class="id" title="var">normal_forms_unique</span>:<br/>
+&nbsp;&nbsp;<span class="id" title="var">deterministic</span> (<span class="id" title="var">normal_form_of</span> <span class="id" title="var">step</span>).<br/>
+<div class="togglescript" id="proofcontrol11" onclick="toggleDisplay('proof11');toggleDisplay('proofcontrol11')"><span class="show"></span></div>
+<div class="proofscript" id="proof11" onclick="toggleDisplay('proof11');toggleDisplay('proofcontrol11')">
+<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;<span class="comment">(*&nbsp;We&nbsp;recommend&nbsp;using&nbsp;this&nbsp;initial&nbsp;setup&nbsp;as-is!&nbsp;*)</span><br/>
+&nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <span class="id" title="var">deterministic</span>. <span class="id" title="tactic">unfold</span> <span class="id" title="var">normal_form_of</span>.<br/>
+&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y<sub>1</sub></span> <span class="id" title="var">y<sub>2</sub></span> <span class="id" title="var">P<sub>1</sub></span> <span class="id" title="var">P<sub>2</sub></span>.<br/>
+&nbsp;&nbsp;<span class="id" title="tactic">destruct</span> <span class="id" title="var">P<sub>1</sub></span> <span class="id" title="keyword">as</span> [<span class="id" title="var">P<sub>11</sub></span> <span class="id" title="var">P<sub>12</sub></span>].<br/>
+&nbsp;&nbsp;<span class="id" title="tactic">destruct</span> <span class="id" title="var">P<sub>2</sub></span> <span class="id" title="keyword">as</span> [<span class="id" title="var">P<sub>21</sub></span> <span class="id" title="var">P<sub>22</sub></span>].<br/>
+&nbsp;&nbsp;<span class="comment">(*&nbsp;FILL&nbsp;IN&nbsp;HERE&nbsp;*)</span> <span class="id" title="var">Admitted</span>.<br/>
+</div>
+</div>
+
+<div class="doc">
+<font size=-2>&#9744;</font> 
+<div class="paragraph"> </div>
+
 <a id="lab266"></a><h3 class="section"> </h3>
  Indeed, something stronger is true (for this language):
 
@@ -1174,7 +1191,7 @@ In particular, for the <span class="inlinecode"><span class="id" title="var">mul
 
 <ul class="doclist">
 <li> the reduction of <i>any</i> term <span class="inlinecode"><span class="id" title="var">t</span></span> will eventually reach a
-         normal form
+         normal form in a finite number of steps
 
 </li>
 </ul>
@@ -1186,8 +1203,7 @@ In particular, for the <span class="inlinecode"><span class="id" title="var">mul
 <div class="code">
 
 <span class="id" title="keyword">Definition</span> <span class="id" title="var">normalizing</span> {<span class="id" title="var">X</span> : <span class="id" title="keyword">Type</span>} (<span class="id" title="var">R</span> : <span class="id" title="var">relation</span> <span class="id" title="var">X</span>) :=<br/>
-&nbsp;&nbsp;<span class="id" title="keyword">∀</span> <span class="id" title="var">t</span>, <span class="id" title="tactic">∃</span> <span class="id" title="var">t'</span>,<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="var">multi</span> <span class="id" title="var">R</span>) <span class="id" title="var">t</span> <span class="id" title="var">t'</span> ∧ <span class="id" title="var">normal_form</span> <span class="id" title="var">R</span> <span class="id" title="var">t'</span>.<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">∀</span> <span class="id" title="var">t</span>, <span class="id" title="tactic">∃</span> <span class="id" title="var">t'</span>, <span class="id" title="var">normal_form_of</span> <span class="id" title="var">R</span> <span class="id" title="var">t</span> <span class="id" title="var">t'</span>.<br/>
 </div>
 
 <div class="doc">
@@ -1214,35 +1230,35 @@ In particular, for the <span class="inlinecode"><span class="id" title="var">mul
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> <span class="id" title="var">t<sub>1</sub>'</span> <span class="id" title="var">t<sub>2</sub></span> <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span>           (<span class="id" title="tactic">by</span> <span class="id" title="var">ST_Plus1</span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> <span class="id" title="var">t<sub>1</sub>''</span> <span class="id" title="var">t<sub>2</sub></span> <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span>          (<span class="id" title="tactic">by</span> <span class="id" title="var">ST_Plus1</span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> (<span class="id" title="var">C</span> <span class="id" title="var">v<sub>1</sub></span>) <span class="id" title="var">t<sub>2</sub></span> <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span>        (<span class="id" title="tactic">by</span> <span class="id" title="var">ST_Plus2</span>)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> (<span class="id" title="var">C</span> <span class="id" title="var">v<sub>1</sub></span>) <span class="id" title="var">t<sub>2</sub>'</span> <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span>       (<span class="id" title="tactic">by</span> <span class="id" title="var">ST_Plus2</span>)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> (<span class="id" title="var">C</span> <span class="id" title="var">v<sub>1</sub></span>) <span class="id" title="var">t<sub>2</sub>''</span> <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span>      (<span class="id" title="tactic">by</span> <span class="id" title="var">ST_Plus2</span>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> (<span class="id" title="var">C</span> <span class="id" title="var">n<sub>1</sub></span>) <span class="id" title="var">t<sub>2</sub></span> <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span>        (<span class="id" title="tactic">by</span> <span class="id" title="var">ST_Plus2</span>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> (<span class="id" title="var">C</span> <span class="id" title="var">n<sub>1</sub></span>) <span class="id" title="var">t<sub>2</sub>'</span> <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span>       (<span class="id" title="tactic">by</span> <span class="id" title="var">ST_Plus2</span>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> (<span class="id" title="var">C</span> <span class="id" title="var">n<sub>1</sub></span>) <span class="id" title="var">t<sub>2</sub>''</span> <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span>      (<span class="id" title="tactic">by</span> <span class="id" title="var">ST_Plus2</span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> (<span class="id" title="var">C</span> <span class="id" title="var">v<sub>1</sub></span>) (<span class="id" title="var">C</span> <span class="id" title="var">v<sub>2</sub></span>) <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span>    (<span class="id" title="tactic">by</span> <span class="id" title="var">ST_PlusConstConst</span>)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">C</span> (<span class="id" title="var">v<sub>1</sub></span> + <span class="id" title="var">v<sub>2</sub></span>)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">P</span> (<span class="id" title="var">C</span> <span class="id" title="var">n<sub>1</sub></span>) (<span class="id" title="var">C</span> <span class="id" title="var">n<sub>2</sub></span>) <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span>    (<span class="id" title="tactic">by</span> <span class="id" title="var">ST_PlusConstConst</span>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">C</span> (<span class="id" title="var">n<sub>1</sub></span> + <span class="id" title="var">n<sub>2</sub></span>)
 </span>    That is, the multistep reduction of a term of the form <span class="inlinecode"><span class="id" title="var">P</span></span> <span class="inlinecode"><span class="id" title="var">t<sub>1</sub></span></span> <span class="inlinecode"><span class="id" title="var">t<sub>2</sub></span></span>
     proceeds in three phases:
 <ul class="doclist">
 <li> First, we use <span class="inlinecode"><span class="id" title="var">ST_Plus1</span></span> some number of times to reduce <span class="inlinecode"><span class="id" title="var">t<sub>1</sub></span></span>
          to a normal form, which must (by <span class="inlinecode"><span class="id" title="var">nf_same_as_value</span></span>) be a
-         term of the form <span class="inlinecode"><span class="id" title="var">C</span></span> <span class="inlinecode"><span class="id" title="var">v<sub>1</sub></span></span> for some <span class="inlinecode"><span class="id" title="var">v<sub>1</sub></span></span>.
+         term of the form <span class="inlinecode"><span class="id" title="var">C</span></span> <span class="inlinecode"><span class="id" title="var">n<sub>1</sub></span></span> for some <span class="inlinecode"><span class="id" title="var">n<sub>1</sub></span></span>.
 
 </li>
 <li> Next, we use <span class="inlinecode"><span class="id" title="var">ST_Plus2</span></span> some number of times to reduce <span class="inlinecode"><span class="id" title="var">t<sub>2</sub></span></span>
          to a normal form, which must again be a term of the form <span class="inlinecode"><span class="id" title="var">C</span></span>
-         <span class="inlinecode"><span class="id" title="var">v<sub>2</sub></span></span> for some <span class="inlinecode"><span class="id" title="var">v<sub>2</sub></span></span>.
+         <span class="inlinecode"><span class="id" title="var">n<sub>2</sub></span></span> for some <span class="inlinecode"><span class="id" title="var">n<sub>2</sub></span></span>.
 
 </li>
 <li> Finally, we use <span class="inlinecode"><span class="id" title="var">ST_PlusConstConst</span></span> one time to reduce <span class="inlinecode"><span class="id" title="var">P</span></span> <span class="inlinecode">(<span class="id" title="var">C</span></span>
-         <span class="inlinecode"><span class="id" title="var">v<sub>1</sub></span>)</span> <span class="inlinecode">(<span class="id" title="var">C</span></span> <span class="inlinecode"><span class="id" title="var">v<sub>2</sub></span>)</span> to <span class="inlinecode"><span class="id" title="var">C</span></span> <span class="inlinecode">(<span class="id" title="var">v<sub>1</sub></span></span> <span class="inlinecode">+</span> <span class="inlinecode"><span class="id" title="var">v<sub>2</sub></span>)</span>. 
+         <span class="inlinecode"><span class="id" title="var">n<sub>1</sub></span>)</span> <span class="inlinecode">(<span class="id" title="var">C</span></span> <span class="inlinecode"><span class="id" title="var">n<sub>2</sub></span>)</span> to <span class="inlinecode"><span class="id" title="var">C</span></span> <span class="inlinecode">(<span class="id" title="var">n<sub>1</sub></span></span> <span class="inlinecode">+</span> <span class="inlinecode"><span class="id" title="var">n<sub>2</sub></span>)</span>. 
 
 </li>
 </ul>
 </div>
 <div class="code">
 
-<div class="togglescript" id="proofcontrol11" onclick="toggleDisplay('proof11');toggleDisplay('proofcontrol11')"><span class="show"></span></div>
-<div class="proofscript" id="proof11" onclick="toggleDisplay('proof11');toggleDisplay('proofcontrol11')">
+<div class="togglescript" id="proofcontrol12" onclick="toggleDisplay('proof12');toggleDisplay('proofcontrol12')"><span class="show"></span></div>
+<div class="proofscript" id="proof12" onclick="toggleDisplay('proof12');toggleDisplay('proofcontrol12')">
 <span class="id" title="keyword">Proof</span>.<br/>
 &nbsp;&nbsp;<span class="comment">(*&nbsp;FILL&nbsp;IN&nbsp;HERE&nbsp;*)</span> <span class="id" title="var">Admitted</span>.<br/>
 </div>
@@ -1259,8 +1275,8 @@ In particular, for the <span class="inlinecode"><span class="id" title="var">mul
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">t</span> <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> <span class="id" title="var">t'</span> →<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">t'</span> ==&gt; <span class="id" title="var">n</span> →<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">t</span>  ==&gt; <span class="id" title="var">n</span>.<br/>
-<div class="togglescript" id="proofcontrol12" onclick="toggleDisplay('proof12');toggleDisplay('proofcontrol12')"><span class="show"></span></div>
-<div class="proofscript" id="proof12" onclick="toggleDisplay('proof12');toggleDisplay('proofcontrol12')">
+<div class="togglescript" id="proofcontrol13" onclick="toggleDisplay('proof13');toggleDisplay('proofcontrol13')"><span class="show"></span></div>
+<div class="proofscript" id="proof13" onclick="toggleDisplay('proof13');toggleDisplay('proofcontrol13')">
 <span class="id" title="keyword">Proof</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">t</span> <span class="id" title="var">t'</span> <span class="id" title="var">n</span> <span class="id" title="var">Hs</span>. <span class="id" title="tactic">generalize</span> <span class="id" title="tactic">dependent</span> <span class="id" title="var">n</span>.<br/>
 &nbsp;&nbsp;<span class="comment">(*&nbsp;FILL&nbsp;IN&nbsp;HERE&nbsp;*)</span> <span class="id" title="var">Admitted</span>.<br/>
@@ -1283,9 +1299,9 @@ In particular, for the <span class="inlinecode"><span class="id" title="var">mul
 <div class="code">
 
 <span class="id" title="keyword">Theorem</span> <span class="id" title="var">multistep__eval</span> : <span class="id" title="keyword">∀</span> <span class="id" title="var">t</span> <span class="id" title="var">t'</span>,<br/>
-&nbsp;&nbsp;<span class="id" title="var">normal_form_of</span> <span class="id" title="var">t</span> <span class="id" title="var">t'</span> → <span class="id" title="tactic">∃</span> <span class="id" title="var">n</span>, <span class="id" title="var">t'</span> = <span class="id" title="var">C</span> <span class="id" title="var">n</span> ∧ <span class="id" title="var">t</span> ==&gt; <span class="id" title="var">n</span>.<br/>
-<div class="togglescript" id="proofcontrol13" onclick="toggleDisplay('proof13');toggleDisplay('proofcontrol13')"><span class="show"></span></div>
-<div class="proofscript" id="proof13" onclick="toggleDisplay('proof13');toggleDisplay('proofcontrol13')">
+&nbsp;&nbsp;<span class="id" title="var">normal_form_of</span> <span class="id" title="var">step</span> <span class="id" title="var">t</span> <span class="id" title="var">t'</span> → <span class="id" title="tactic">∃</span> <span class="id" title="var">n</span>, <span class="id" title="var">t'</span> = <span class="id" title="var">C</span> <span class="id" title="var">n</span> ∧ <span class="id" title="var">t</span> ==&gt; <span class="id" title="var">n</span>.<br/>
+<div class="togglescript" id="proofcontrol14" onclick="toggleDisplay('proof14');toggleDisplay('proofcontrol14')"><span class="show"></span></div>
+<div class="proofscript" id="proof14" onclick="toggleDisplay('proof14');toggleDisplay('proofcontrol14')">
 <span class="id" title="keyword">Proof</span>.<br/>
 &nbsp;&nbsp;<span class="comment">(*&nbsp;FILL&nbsp;IN&nbsp;HERE&nbsp;*)</span> <span class="id" title="var">Admitted</span>.<br/>
 </div>
@@ -1311,6 +1327,9 @@ In particular, for the <span class="inlinecode"><span class="id" title="var">mul
 
 <div class="doc">
 <a id="lab273"></a><h3 class="section">Small-step evaluation relation for arithmetic expressions</h3>
+
+<div class="paragraph"> </div>
+
 <center><table class="infrule">
 <tr class="infruleassumption">
   <td class="infrule">&nbsp;&nbsp;</td>
@@ -1321,7 +1340,7 @@ In particular, for the <span class="inlinecode"><span class="id" title="var">mul
   <td class="infrule"><hr /></td>
 </tr>
 <tr class="infruleassumption">
-  <td class="infrule">i / st <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> (st i)</td>
+  <td class="infrule">i / st <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> ANum (st i)</td>
   <td></td>
 </tr>
 </table></center><center><table class="infrule">
@@ -1360,7 +1379,7 @@ In particular, for the <span class="inlinecode"><span class="id" title="var">mul
   <td class="infrule"><hr /></td>
 </tr>
 <tr class="infruleassumption">
-  <td class="infrule">v<sub>1</sub> + v<sub>2</sub> / st <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> (v<sub>1</sub> + v<sub>2</sub>)</td>
+  <td class="infrule">v<sub>1</sub> + v<sub>2</sub> / st <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> ANum (v<sub>1</sub> + v<sub>2</sub>)</td>
   <td></td>
 </tr>
 </table></center><center><table class="infrule">
@@ -1399,7 +1418,7 @@ In particular, for the <span class="inlinecode"><span class="id" title="var">mul
   <td class="infrule"><hr /></td>
 </tr>
 <tr class="infruleassumption">
-  <td class="infrule">v<sub>1</sub> - v<sub>2</sub> / st <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> (v<sub>1</sub> - v<sub>2</sub>)</td>
+  <td class="infrule">v<sub>1</sub> - v<sub>2</sub> / st <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> ANum (v<sub>1</sub> - v<sub>2</sub>)</td>
   <td></td>
 </tr>
 </table></center><center><table class="infrule">
@@ -1438,7 +1457,7 @@ In particular, for the <span class="inlinecode"><span class="id" title="var">mul
   <td class="infrule"><hr /></td>
 </tr>
 <tr class="infruleassumption">
-  <td class="infrule">v<sub>1</sub> * v<sub>2</sub> / st <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> (v<sub>1</sub> * v<sub>2</sub>)</td>
+  <td class="infrule">v<sub>1</sub> * v<sub>2</sub> / st <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> ANum (v<sub>1</sub> * v<sub>2</sub>)</td>
   <td></td>
 </tr>
 </table></center>
@@ -1482,7 +1501,7 @@ In particular, for the <span class="inlinecode"><span class="id" title="var">mul
   <td class="infrule"><hr /></td>
 </tr>
 <tr class="infruleassumption">
-  <td class="infrule">v<sub>1</sub> = v<sub>2</sub> / st <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> (if (v<sub>1</sub> =? v<sub>2</sub>) then true else false)</td>
+  <td class="infrule">v<sub>1</sub> = v<sub>2</sub> / st <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> (if (v<sub>1</sub> =? v<sub>2</sub>) then BTrue else BFalse)</td>
   <td></td>
 </tr>
 </table></center><center><table class="infrule">
@@ -1521,7 +1540,7 @@ In particular, for the <span class="inlinecode"><span class="id" title="var">mul
   <td class="infrule"><hr /></td>
 </tr>
 <tr class="infruleassumption">
-  <td class="infrule">v<sub>1</sub> <= v<sub>2</sub> / st <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> (if (v<sub>1</sub> <=? v<sub>2</sub>) then true else false)</td>
+  <td class="infrule">v<sub>1</sub> <= v<sub>2</sub> / st <span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span> (if (v<sub>1</sub> <=? v<sub>2</sub>) then BTrue else BFalse)</td>
   <td></td>
 </tr>
 </table></center><center><table class="infrule">
@@ -1857,13 +1876,7 @@ In particular, for the <span class="inlinecode"><span class="id" title="var">mul
 <a id="lab279"></a><h3 class="section"> </h3>
 
 </div>
-<div class="code">
-<span class="id" title="keyword">Definition</span> <span class="id" title="var">cmultistep</span> := <span class="id" title="var">multi</span> <span class="id" title="var">cstep</span>.<br/><hr class='doublespaceincode'/>
-<span class="id" title="keyword">Notation</span> &quot; t '/' st '<span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:6%;'><span style='letter-spacing:-.2em;'>-</span><span style='letter-spacing:-.2em;'>-</span></span><span style='letter-spacing:-.2em;'>&gt;</span><span style='vertical-align:15%;'>*</span></span></span>' t' '/' st' " :=<br/>
-&nbsp;&nbsp;&nbsp;(<span class="id" title="var">multi</span> <span class="id" title="var">cstep</span>  (<span class="id" title="var">t</span>,<span class="id" title="var">st</span>) (<span class="id" title="var">t'</span>,<span class="id" title="var">st'</span>))<br/>
-&nbsp;&nbsp;&nbsp;(<span class="id" title="tactic">at</span> <span class="id" title="keyword">level</span> 40, <span class="id" title="var">st</span> <span class="id" title="tactic">at</span> <span class="id" title="keyword">level</span> 39, <span class="id" title="var">t'</span> <span class="id" title="tactic">at</span> <span class="id" title="keyword">level</span> 39).<br/><hr class='doublespaceincode'/>
- <!-- /quiz -->
-</div><div class="quiz">
+<div class="quiz">
 
 
 <div class="doc">
