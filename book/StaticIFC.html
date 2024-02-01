@@ -1325,7 +1325,7 @@ We could prove that <span class="inlinecode"><span class="id" title="var">pc_wel
     type system that only prevents <i>loop</i> conditions to depend on secrets. 
 <div class="paragraph"> </div>
 
-<a id="lab693"></a><h2 class="section">We just need to update the while rule of <span class="inlinecode"><span class="id" title="var">well_typed</span></span>:</h2>
+<a id="lab693"></a><h3 class="section">We just need to update the while rule of <span class="inlinecode"><span class="id" title="var">well_typed</span></span>:</h3>
 
 <div class="paragraph"> </div>
 
@@ -1396,7 +1396,7 @@ We could prove that <span class="inlinecode"><span class="id" title="var">pc_wel
 </div>
 
 <div class="doc">
-<a id="lab694"></a><h2 class="section">We prove that <span class="inlinecode"><span class="id" title="var">ts_well_typed</span></span> enforces TSNI.</h2>
+<a id="lab694"></a><h3 class="section">We prove that <span class="inlinecode"><span class="id" title="var">ts_well_typed</span></span> enforces TSNI.</h3>
 
 <div class="paragraph"> </div>
 
@@ -1524,7 +1524,7 @@ We could prove that <span class="inlinecode"><span class="id" title="var">pc_wel
 </div>
 
 <div class="doc">
-<a id="lab696"></a><h2 class="section">Instrumented semantics with branches</h2>
+<a id="lab696"></a><h3 class="section">Instrumented semantics with branches</h3>
 
 <div class="paragraph"> </div>
 
@@ -1666,11 +1666,11 @@ We could prove that <span class="inlinecode"><span class="id" title="var">pc_wel
 </div>
 
 <div class="doc">
-<a id="lab697"></a><h2 class="section">Program counter security</h2>
+<a id="lab697"></a><h3 class="section">Program counter security definition</h3>
 
 <div class="paragraph"> </div>
 
- Using instrumented semantics we define program counter security 
+ Using the instrumented semantics we define program counter security: 
 </div>
 <div class="code">
 
@@ -1733,6 +1733,10 @@ Program counter security is mostly orthogonal to noninterference and
 </div>
 
 <div class="doc">
+The proof does rely on <span class="inlinecode"><span class="id" title="var">pc_well_typed</span></span> implying
+    noninterference for the sequencing and loop cases. 
+<div class="paragraph"> </div>
+
 <a id="lab698"></a><h2 class="section">Cryptographic constant-time</h2>
 
 <div class="paragraph"> </div>
@@ -2134,7 +2138,7 @@ We define an instrumented operational semantics based on these
 </div>
 
 <br/>
-<span class="comment">(*&nbsp;2024-02-01&nbsp;13:52&nbsp;*)</span><br/>
+<span class="comment">(*&nbsp;2024-02-01&nbsp;14:24&nbsp;*)</span><br/>
 </div>
 </div>
 
