@@ -44,20 +44,6 @@ In this chapter, we develop the fundamental theory of the Simply
 <div class="doc">
 <a id="lab325"></a><h1 class="section">Canonical Forms</h1>
 
-<div class="paragraph"> </div>
-
- As we saw for the very simple language in the <a href="Types.html"><span class="inlineref">Types</span></a>
-    chapter, the first step in establishing basic properties of
-    reduction and types is to identify the possible <i>canonical
-    forms</i> (i.e., well-typed values) belonging to each type.  For
-    <span class="inlinecode"><span class="id" title="var">Bool</span></span>, these are again the boolean values <span class="inlinecode"><span class="id" title="var">true</span></span> and <span class="inlinecode"><span class="id" title="var">false</span></span>; for
-    arrow types, they are lambda-abstractions.
-
-<div class="paragraph"> </div>
-
-    Formally, we will need these lemmas only for terms that are not
-    only well typed but <i>closed</i> -- i.e., well typed in the empty
-    context. 
 </div>
 <div class="code">
 
@@ -149,7 +135,8 @@ In this chapter, we develop the fundamental theory of the Simply
 
 <ul class="doclist">
 <li> The <i>preservation theorem</i> is proved by induction on a typing
-        derivation, pretty much as we did in the <a href="Types.html"><span class="inlineref">Types</span></a> chapter.
+        derivation and case analysis on the step relation,
+        pretty much as we did in the <a href="Types.html"><span class="inlineref">Types</span></a> chapter.
 
 <div class="paragraph"> </div>
 
