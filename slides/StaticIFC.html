@@ -1466,8 +1466,13 @@ The proof does rely on <span class="inlinecode"><span class="id" title="var">pc_
 
 <div class="paragraph"> </div>
 
-    To model this we first extend the Imp language with
-    arrays, in which the accessed index is computed at runtime. 
+    To model this we first extend the Imp language with arrays. We
+    need such an extension, since otherwise variable accesses in the
+    original Imp map to memory operations at constant locations, which
+    thus cannot depend on secrets, so CCT trivially holds for all
+    programs in Imp. Array indices on the other hand are computed at
+    runtime, which leads to accessing memory addresses that can depend
+    on secrets, making CCT non-trivial for Imp with arrays. 
 </div>
 <div class="code">
 
