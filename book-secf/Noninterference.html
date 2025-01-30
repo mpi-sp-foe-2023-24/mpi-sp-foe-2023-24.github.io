@@ -763,7 +763,7 @@ The result of applying <span class="inlinecode"><span class="id" title="var">sme
 &nbsp;&nbsp;<a class="idref" href="Noninterference.html#s<sub>2</sub>:134"><span class="id" title="variable">s<sub>2</sub></span></a> <span class="id" title="notation">=[</span> <a class="idref" href="Noninterference.html#c:132"><span class="id" title="variable">c</span></a> <span class="id" title="notation">]=&gt;</span> <a class="idref" href="Noninterference.html#s<sub>2</sub>':136"><span class="id" title="variable">s<sub>2</sub>'</span></a> <a class="idref" href="http://coq.inria.fr/library//Coq.Init.Logic.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">→</span></a><br/>
 &nbsp;&nbsp;<a class="idref" href="Noninterference.html#pub_equiv"><span class="id" title="definition">pub_equiv</span></a> <a class="idref" href="Noninterference.html#pub:131"><span class="id" title="variable">pub</span></a> <a class="idref" href="Noninterference.html#s<sub>1</sub>':135"><span class="id" title="variable">s<sub>1</sub>'</span></a> <a class="idref" href="Noninterference.html#s<sub>2</sub>':136"><span class="id" title="variable">s<sub>2</sub>'</span></a>.<br/><hr class='doublespaceincode'/>
 <span class="id" title="keyword">Ltac</span> <span class="id" title="var">invert</span> <span class="id" title="var">H</span> := <span class="id" title="tactic">inversion</span> <span class="id" title="var">H</span>; <span class="id" title="tactic">subst</span>; <span class="id" title="tactic">clear</span> <span class="id" title="var">H</span>.<br/><hr class='doublespaceincode'/>
-<span class="id" title="keyword">Lemma</span> <a id="noninterferent_secore_com'" class="idref" href="#noninterferent_secore_com'"><span class="id" title="lemma">noninterferent_secore_com'</span></a> :<br/>
+<span class="id" title="keyword">Lemma</span> <a id="noninterferent_secure_com'" class="idref" href="#noninterferent_secure_com'"><span class="id" title="lemma">noninterferent_secure_com'</span></a> :<br/>
 &nbsp;&nbsp;<a class="idref" href="Noninterference.html#noninterferent_while"><span class="id" title="definition">noninterferent_while</span></a> <a class="idref" href="Noninterference.html#xpub"><span class="id" title="definition">xpub</span></a> <a class="idref" href="Noninterference.html#secure_com"><span class="id" title="definition">secure_com</span></a>.<br/>
 <div class="togglescript" id="proofcontrol10" onclick="toggleDisplay('proof10');toggleDisplay('proofcontrol10')"><span class="show"></span></div>
 <div class="proofscript" id="proof10" onclick="toggleDisplay('proof10');toggleDisplay('proofcontrol10')">
@@ -874,10 +874,7 @@ Turns out we can only prove a weak version of transparency for
 
 <div class="doc">
 More specifically, we can only prove that <span class="inlinecode"><span class="id" title="var">sme_while</span></span> execution implies
-    <span class="inlinecode"><span class="id" title="var">ceval</span></span>. But we cannot prove the reverse implication, since a command
-    terminating when starting in state <span class="inlinecode"><span class="id" title="var">s</span></span>, does not necessarily still
-    terminates when starting in state <span class="inlinecode"><span class="id" title="var">split_state</span></span> <span class="inlinecode"><span class="id" title="var">s</span></span> <span class="inlinecode"><span class="id" title="var">pub</span></span> <span class="inlinecode"><span class="id" title="var">true</span></span>, as would be
-    needed for proving <span class="inlinecode"><span class="id" title="var">sme_while</span></span>. 
+    <span class="inlinecode"><span class="id" title="var">ceval</span></span>. 
 </div>
 <div class="code">
 
@@ -898,9 +895,15 @@ More specifically, we can only prove that <span class="inlinecode"><span class="
 </div>
 
 <div class="doc">
-Yet it seems we can still do the same things as in the setting without
-    while loops, including SME (just not fully transparent). So is there
-    anything special about loops and nontermination?
+But we cannot prove the reverse implication, since a command
+    terminating when starting in state <span class="inlinecode"><span class="id" title="var">s</span></span>, does not necessarily still
+    terminates when starting in state <span class="inlinecode"><span class="id" title="var">split_state</span></span> <span class="inlinecode"><span class="id" title="var">s</span></span> <span class="inlinecode"><span class="id" title="var">pub</span></span> <span class="inlinecode"><span class="id" title="var">true</span></span>, as
+    would be needed for proving <span class="inlinecode"><span class="id" title="var">sme_while</span></span>. 
+<div class="paragraph"> </div>
+
+ Yet it seems we can still do most of the things as in the setting
+    without while loops, including SME (just not fully transparent).
+    So is there anything special about loops and nontermination?
 
 <div class="paragraph"> </div>
 
@@ -917,7 +920,7 @@ Yet it seems we can still do the same things as in the setting without
     since it doesn't consider nontermination to be observable to an attacker. 
 <div class="paragraph"> </div>
 
- In particular, the following program is secure wrt TINI: 
+ In particular, the following program is <i>secure</i> wrt TINI: 
 </div>
 <div class="code">
 
@@ -1089,7 +1092,7 @@ Now for a more interesting use of TSNI: it turns out that
 </div>
 
 <div class="doc">
-Unfortunately <span class="inlinecode"><span class="id" title="var">sme_while</span></span> does not enforce TSNI, and this is hard
+Unfortunately <span class="inlinecode"><span class="id" title="var">sme_while</span></span> does not <i>enforce</i> TSNI, and this is hard
     to fix in our current setting, where programs only return a result
     in the end, a final state, so we had to merge the public and
     secret inputs into a single final state. Instead, SME is commonly
@@ -1100,7 +1103,7 @@ Unfortunately <span class="inlinecode"><span class="id" title="var">sme_while</s
 </div>
 <div class="code">
 
-<span class="comment">(*&nbsp;2025-01-29&nbsp;22:16&nbsp;*)</span><br/>
+<span class="comment">(*&nbsp;2025-01-30&nbsp;14:06&nbsp;*)</span><br/>
 </div>
 </div>
 
