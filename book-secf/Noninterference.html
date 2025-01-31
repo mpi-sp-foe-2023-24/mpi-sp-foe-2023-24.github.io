@@ -353,7 +353,9 @@ This is a secure behavior, but it is different from that of the
 <li> by using dynamic overapproximations that unnecessarily
           change program behavior, for instance forcefully terminating
           even some secure programs to prevent leaks, in which case
-          they are not transparent (dynamic information flow control).
+          they are not transparent (dynamic information flow control;
+          an extension of dynamic taint tracking to also handle
+          implicit flows).
 
 </li>
 </ul>
@@ -592,7 +594,7 @@ One thing to note in this proof is that we used the lemma
 <span class="id" title="keyword">Definition</span> <a id="xpub" class="idref" href="#xpub"><span class="id" title="definition">xpub</span></a> : <a class="idref" href="Noninterference.html#pub_map"><span class="id" title="definition">pub_map</span></a> := (<span class="id" title="definition">X</span> <span class="id" title="notation">!<span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:5%;'><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span></span> <span class="id" title="notation">true</span><span class="id" title="notation">;</span> <span class="id" title="notation">_</span> <span class="id" title="notation">!<span class="nowrap"><span style='font-size:85%;'><span style='vertical-align:5%;'><span style='letter-spacing:-.2em;'>-</span></span>&gt;</span></span></span> <span class="id" title="notation">false</span>).<br/><hr class='doublespaceincode'/>
 <span class="id" title="keyword">Definition</span> <a id="secure_com" class="idref" href="#secure_com"><span class="id" title="definition">secure_com</span></a> : <span class="id" title="inductive">com</span> :=<br/>
 &nbsp;&nbsp;<span class="id" title="notation">&lt;{</span> <span class="id" title="definition">X</span> <span class="id" title="notation">:=</span> <span class="id" title="definition">X</span><span class="id" title="notation">+</span>1<span class="id" title="notation">;</span><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="definition">Y</span> <span class="id" title="notation">:=</span> <span class="id" title="definition">X</span><span class="id" title="notation">+</span><span class="id" title="definition">Y</span><span class="id" title="notation">×</span>2 <span class="id" title="notation">}&gt;</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="definition">Y</span> <span class="id" title="notation">:=</span> <span class="id" title="notation">(</span><span class="id" title="definition">X</span><span class="id" title="notation">-</span>1<span class="id" title="notation">)</span><span class="id" title="notation">+</span><span class="id" title="definition">Y</span><span class="id" title="notation">×</span>2 <span class="id" title="notation">}&gt;</span>.<br/>
 </div>
 
 <div class="doc">
@@ -647,7 +649,7 @@ Now let's look at a couple of insecure commands:
 
 <span class="id" title="keyword">Definition</span> <a id="insecure_com1" class="idref" href="#insecure_com1"><span class="id" title="definition">insecure_com1</span></a> : <span class="id" title="inductive">com</span> :=<br/>
 &nbsp;&nbsp;<span class="id" title="notation">&lt;{</span> <span class="id" title="definition">X</span> <span class="id" title="notation">:=</span> <span class="id" title="definition">Y</span><span class="id" title="notation">+</span>1<span class="id" title="notation">;</span> <span class="comment">(*&nbsp;&lt;-&nbsp;bad&nbsp;explicit&nbsp;flow!&nbsp;*)</span><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="definition">Y</span> <span class="id" title="notation">:=</span> <span class="id" title="definition">X</span><span class="id" title="notation">+</span><span class="id" title="definition">Y</span><span class="id" title="notation">×</span>2 <span class="id" title="notation">}&gt;</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="definition">Y</span> <span class="id" title="notation">:=</span> <span class="id" title="notation">(</span><span class="id" title="definition">X</span><span class="id" title="notation">-</span>1<span class="id" title="notation">)</span><span class="id" title="notation">+</span><span class="id" title="definition">Y</span><span class="id" title="notation">×</span>2 <span class="id" title="notation">}&gt;</span>.<br/>
 </div>
 
 <div class="doc">
@@ -1103,7 +1105,7 @@ Unfortunately <span class="inlinecode"><span class="id" title="var">sme_while</s
 </div>
 <div class="code">
 
-<span class="comment">(*&nbsp;2025-01-30&nbsp;14:06&nbsp;*)</span><br/>
+<span class="comment">(*&nbsp;2025-01-31&nbsp;22:03&nbsp;*)</span><br/>
 </div>
 </div>
 
